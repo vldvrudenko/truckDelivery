@@ -5,40 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:opsz,wght@14..32,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
-    <title>Truck</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>About us</title>
 </head>
 
 <body>
     <div class="wrapper">
 
         <div class="header__bg">
-            <div class="navbar">
-                <div class="logo">
-                    <h2><img src="images/logo-transparent-png-removebg-preview.png" alt="logo" class="logo"></h2>
+            <div class="header__container-content">
+                <div class="navbar">
+                    <div class="logo">
+                        <h2><img src="images/logo-transparent-png-removebg-preview.png" alt="logo" class="logo"></h2>
+                    </div>
+                    <ul class="links">
+                        <li><a href="index.html" class="navbar__links">Home</a></li>
+                        <li><a href="aboutUs.html" class="navbar__links">About Us</a></li>
+                        <li><a href="#" class="navbar__links">Careers</a></li>
+                        <li><a href="#" class="navbar__links">Contact Us</a></li>
+                    </ul>
+                    <div class="toggle">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
                 </div>
-                <ul class="links">
-                    <li><a href="#" class="navbar__links">Home</a></li>
-                    <li><a href="aboutUs.html" class="navbar__links">About Us</a></li>
-                    <li><a href="#" class="navbar__links">Careers</a></li>
-                    <li><a href="#" class="navbar__links">Contact Us</a></li>
-                </ul>
-                <div class="toggle">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </div>
-            <div class="container header__container">
-                <div class="main__text-container">
-                    <h2 class=" header__title-slog">Trucking Services</h2>
-                    <h1 class="header__title-logo">We Deliver Your Goods Safe</h1>
-                    <p class="header__title-text">Trust us with your freight – our reliable trucking services will
+                <div class=" header__container">
+                    <h1>Trucking Services</h1>
+                    <h3>We Deliver Your Goods Safe</h3>
+                    <p>Trust us with your freight – our reliable trucking services will
                         ensure
                         timely and safe delivery
                         of
@@ -58,287 +61,241 @@
         </div>
 
 
+
+
+
+
+
         <main class="main">
-
-            <section class="container delivery__position">
-                <h1 class="header__title-logo">Safe delivery our main goal</h1>
-
-            </section>
-
-            <section class="container solution__main-block">
-                <div class="about__section-block">
-                    <div class="about__section-block-size">
-                        <h3 class="about__section-title">About Us</h3>
-                        <h2 class="about__title">Top Team Carrier</h2>
-                        <p class="about__warning-text">With so many years under their belt Top Team Carrier brings
-                            wisdom and innovation to the
-                            table. If you need a team this is the one for you!</p>
-                        <p>Your go-to load transportation company. We’re here to give you the finest quality service,
-                            with safety, dependability, and long-term sustainability as core values. With a fleet of the
-                            best vehicles and a team of highly qualified employees and experienced drivers, load
-                            transportation service does not get any better than here at Top Team Carrier. We want your
-                            experience with us to be the most delightful and profitable you’ve ever had.</p>
-                    </div>
-                    <img src="images/bestCar.jpg" alt="" class="about__section-block-img">
+            <h1 class="section__logo">What We Offer</h1>
+            <section class="card-section container">
+                <div class="card__item">
+                    <img src="images/safeDeliveryIcon.svg" alt="">
+                    <h3 class="card__item-logo">Your cargo in safe hands</h3>
+                    <p class="card__item-text">Careful packaging and full tracking — reliability at every stage.</p>
                 </div>
-            </section>
-            <div class="container main__container">
-             
-
-                <!-- <section class="midle__card-section">
-                       <div class="main__container__title">
-                    <h1 class="main__title-secound">We’re With You Every Step of The Way</h1>
-                    <p class="main__text">
-                        Our unwavering commitment to you means we provide support and guidance from start to finish,
-                        ensuring a
-                        successful outcome every step of the way.
+                <div class="card__item">
+                    <img src="images/fastDeliveryIcon.svg" alt="">
+                    <h3 class="card__item-logo">Speed you can rely on</h3>
+                    <p class="card__item-text">Your cargo arrives as fast as possible — no delays, no excuses.</p>
+                </div>
+                <div class="card__item">
+                    <img src="images/curierDeliveryIcon.svg" alt="">
+                    <h3 class="card__item-logo">Fast and easy</h3>
+                    <p class="card__item-text">Personal delivery straight to your door — from our hands to yours.
                     </p>
                 </div>
-                    <div class="midle_cards">
-
-                        <h4 class="midle__card-title">PrePlanning</h4>
-                        <p class="midle__card-text">Thoroughly evaluating all aspects of a trip before rolling onto
-                            the
-                            road
-                            to minimize risks, maximize efficiency, and achieve optimal results.</p>
-                    </div>
-
-                    <div class="midle_cards-red">
-                        <h4 class="midle__card-title">PrePlanning</h4>
-                        <p class="midle__card-text">Thoroughly evaluating all aspects of a trip before rolling onto
-                            the
-                            road
-                            to minimize risks, maximize efficiency, and achieve optimal results.</p>
-
-
-                    </div>
-                    <div class="midle_cards">
-
-                        <h4 class="midle__card-title">PrePlanning</h4>
-                        <p class="midle__card-text">Thoroughly evaluating all aspects of a trip before rolling onto
-                            the
-                            road
-                            to minimize risks, maximize efficiency, and achieve optimal results.</p>
-                    </div>
-
-                </section> -->
-            </div>
-            <section class="container bestLogistic">
-
-                <div class="bestLogistic__img-top">
-                    <img src="images/bestCar.jpg" alt="">
-                </div>
-                <div class="bestLogistic_block">
-                    <h3 class="midle__title bestLogistic__title">The Best Logistics Solutions For Your Business</h3>
-                    <p class="bestLogistic__text">We pride ourselves in delivering the right solutions for all of our
-                        customers. Big or small,
-                        every business matters. Let us deliver your goods with swiftness and ease. </p>
-                    <p class="bestLogistic__text"> With more than 2 decades of experience we strive to venture into the
-                        future helping business
-                        deliver their products where they need to go so that everything moves without hesitation.
-                    </p>
-                    <div class="header__btn-section">
-                        <button class="services__btn btn-new">
-                            <a href="">123 1234 1234</a> </button>
-                        <button class="services__btn btn-new-gold services__btn-section">
-                            <a href="">
-                                Get an Online Quote
-                            </a>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="bestLogistic_item-position">
-                    <div class="bestLogistic_item">
-                        <img src="images/rectangle.svg" alt="">
-                        <div>
-                            <h3 class="bestLogistic_item-title">1800+</h3>
-                            <p class="bestLogistic_item-text">Satisfied Customers
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bestLogistic_item">
-                        <img src="images/rectangle.svg" alt="">
-                        <div>
-                            <h3 class="bestLogistic_item-title">1800+</h3>
-                            <p class="bestLogistic_item-text">Satisfied Customers
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bestLogistic_item">
-                        <img src="images/rectangle.svg" alt="">
-                        <div>
-                            <h3 class="bestLogistic_item-title">1800+</h3>
-                            <p class="bestLogistic_item-text">Satisfied Customers
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </section>
+            <section class="services">
+                <h1 class="section__logo">Our Services</h1>
+                <div class="container services__block">
+                    <div class="services__item">
+                        <img src="images/repairMen_4.jpg" alt="repairMen">
+                        <div class="services__item-textBlock">
 
-            <section class="ourServices">
-                <div class="ourServices_position">
-                    <div class="ourServices__text-position">
-                        <h3 class="midle__title">Our Service Areas</h3>
-                        <p class="ourServices__text">We are available every work day from 9am-5pm CST. Visit our
-                            location or call us to schedule an appointment.</p>
+                            <h3>Maintenance Support</h3>
+
+                            <p>Regular technical checks keep your deliveries — always on the move.</p>
+                        </div>
                     </div>
-                    <div class="services__btn-section">
-                        <button class=" services__btn btn-new"><a href="">123 1234 1234</a> </button>
-                        <button class="  services__btn btn-new-gold"><a href="">Get an Online Quote</a></button>
+                    <div class="services__item">
+                        <img src="images/repairMen_2.jpg" alt="repairMen">
+                        <div class="services__item-textBlock">
+                            <h3>On-Road Inspections</h3>
+                            <p>Pre-trip inspections prevent delays and ensure your cargo arrives on time.</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <img src="images/repairMen_3.jpg" alt="repairMen">
+                        <div class="services__item-textBlock">
+                            <h3>Driver Assistance</h3>
+                            <p>Our team is always nearby to help — so drivers stay focused on the road.</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section class="container">
-                <h1 class="midle__title planingCard-title">Pre-Planning</h1>
-                <div class="planingCard">
-                    <div class="planingCard-text">
-                        <div class="planingCard-pcSection">
-                            <div class="planingCard-item">
-                                <h3 class="midle__title">Pre-Planning & Proactive Business
-                                </h3>
-                                <p>With pre-planning and proactive measures, we can prepare for any
-                                    situation and avoid having our trucks from braking down and leaving our drivers
-                                    stuck in
-                                    the
-                                    middle of nowhere. This way we can stay ahead of the competition and deliver all our
-                                    customers goods quickly and safety. We are dedicated to solving all issues as
-                                    quickly as
-                                    possible and communicating facts to all invested parties. </p>
-                            </div>
-                            <div class="planingCard-pcSection-img">
-                                <img src="images/bestCar.jpg" alt="">
-                            </div>
+                <h2 class="card-infoBlock-logo"> Types of Delivery </h2>
+                <div class="card-infoBlock">
+                    <div class="card-infoBlock-item">
+                        <img src="images/heavyIcon.svg" alt="">
+                        <div>
+                            <h3 class="card__item-logo">Heavy Equipment </h3>
+                            <p class="card__item-text">We handle oversized and industrial cargo with care.</p>
                         </div>
-                        <div class="planingCard-pcSection">
-                            <div class="planingCard-pcSection-img">
-                                <img src="images/bestCar.jpg" alt="">
-                            </div>
-                            <div class="planingCard-item">
-                                <h3 class="midle__title ">Planning Ahead And Routing A Better Future
-                                </h3>
-                                <p>Our dispatch team will pre route all deliveries allowing for safe
-                                    and quick passage. Our drivers have access to fuel pricing throughout the USA which
-                                    allows
-                                    us to drive more and stay competative. Reducing fuel consumption is important for
-                                    our
-                                    drivers and so we inform them of all costs ahead of the trips. Tolls tend to rise
-                                    the
-                                    cost
-                                    of transportation and because of this we have implemented toll passes that drive
-                                    down
-                                    costs.
-                                    Additionally we keep our eyes on weather conditions and all forms of national
-                                    holidays
-                                    in
-                                    order to prepare better so that our drivers never get stuck on the road. </p>
-                            </div>
-                        </div>
-
-
                     </div>
-                    <div class="planingCard-img"><img src="images/planingImg.jpg" alt=""></div>
+                    <div class=" card-infoBlock-item">
+                        <img src="images/doorIcon.svg" alt="">
+                        <div>
+                            <h3 class="card__item-logo"> Doorstep Packages</h3>
+                            <p class="card__item-text">E-commerce and retail delivery to end customers.</p>
+                        </div>
+                    </div>
+                    <div class=" card-infoBlock-item">
+                        <img src="images/storageIcon.svg" alt="">
+                        <div>
+                            <h3 class="card__item-logo">Warehouse-to-Warehouse </h3>
+                            <p class="card__item-text">Scheduled logistics between storage and distribution centers.</p>
+                        </div>
+                    </div>
+                    <div class=" card-infoBlock-item">
+                        <img src="images/planeIcon.svg" alt="">
+                        <div>
+                            <h3 class="card__item-logo">International Cargo </h3>
+                            <p class="card__item-text">Worldwide logistics tailored to your route and needs.</p>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section class="footer__info-block">
-                <div>
-                    <h3 class="footer__info-title">Lorem ipsum dolor</h3>
-                    <p class="footer__info-text">sit amet, consectetur adipiscing elit</p>
-                </div>
-                <button class="btn-new services__btn">
-                    Get an Online Quote
-                </button>
             </section>
 
 
 
-            <!-- <section class="container qualificationBlock">
-                <div>
-                    <img src="images/qualification.jpg" alt="">
-                </div>
-                <div class="qualificationBlock-textBlock">
-                    <div class="qualificationBlock-borders">
-                        <h3 class="qualification__title">Qualifications for CDL Drivers</h3>
-                        <p class="qualification__title-text">Top Team Carrier hiring standards require all driver
-                            applicants to be a minimum of 25 years
-                            of age and have a minimum of 2 years verifiable tractor trailer driving experience within
-                            the United States and/or Canada in similar equipment. (FMCSR, Sec. 391.11 (1)). Candidates
-                            with more than six jobs in the last three years could be rejected.
-                        </p>
-                        <p class="qualification__title-text">Driver applicants with 3 or fewer chargeable or preventable
-                            motor vehicle accidents within
-                            the past 3 years will be considered for employment. Because of Top Team Carrier’s commitment
-                            to safety, driver applicants who fail to meet the above standard will not be considered for
-                            employment by the company.</p>
+            <section class="midleSection__contacts">
+                <h2>
+                    Got cargo? We’re already on the way.
+                </h2>
+                <button>Contact us</button>
+            </section>
+
+            <section class="swiper mySwiper container ">
+                <h2>Quality You Can Count On</h2>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <img src="images/hero_2.jpg" alt="repairMen" class="rating__hero">
+                        <div class="services__item-textBlock">
+                            <h3>Sarah M.</h3>
+                            <p class="swiper-slide-text">Fast, professional, and reliable. My shipment arrived exactly
+                                on time — highly
+                                recommended!</p>
+                        </div>
+                        <div class="rating-block">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                        </div>
                     </div>
-                    <h3 class="qualificationBlock-borders">Disqualifications</h3>
-                    <h3 class="qualificationBlock-borders">Home Time Guaranteed</h3>
-                    <h3 class="qualificationBlock-borders">Weekly Payments</h3>
-                </div>
-                <div class="qualification-midleBlock">
-                    <h3 class="qualification__title">CDL QUALIFICATIONS</h3>
-                    <p>Top Team Carrier offers services thoughout the 48 states within the continental United States.
-                        Our drivers are always ready to move freight wherever necessary.</p>
-                    <p>With the implementation of new equipment, modern technological systems and an excellent dispatch
-                        team, Top Team Carrier strives to keep its drivers on the road earning with as little down time
-                        as possible.</p>
-                    <button class="qualification__midleBlock-btn">Apply Now</button>
-                </div>
-            </section> -->
-            <section class="contact__form">
-                <div class="container contact__block">
-                    <div class="contact__block-shortForm">
-                        <h3 class="contact__block-title">Let Us Lend a Helping Hand</h3>
-                        <p>For any questions or to book a consultation, please contact us in the way that is most
-                            convenient for you.
-                        </p>
-                        <input placeholder="+1 (000) 000-0000"></input>
-                        <input placeholder="info@xyz.com"></input>
-                        <button class="contact__block-btn">Apply Now</button>
+                    <div class="swiper-slide">
+
+                        <img src="images/hero_1.jpg" alt="repairMen" class="rating__hero">
+                        <div class="services__item-textBlock">
+                            <h3>Daniel K. </h3>
+                            <p class="swiper-slide-text">Great customer service and fair pricing. The team kept me
+                                informed throughout the entire
+                                process.</p>
+
+                        </div>
+                        <div class="rating-block">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <img src="images/hero_3.jpg" alt="repairMen" class="rating__hero">
+                        <div class="services__item-textBlock ">
+                            <h3>Oliver R.</h3>
+                            <p class="swiper-slide-text">They handled my fragile cargo with care and everything arrived
+                                in perfect condition.</p>
+                        </div>
+                        <div class="rating-block">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/hero_1.jpg" alt="repairMen" class="rating__hero">
+                        <div class="services__item-textBlock">
+                            <h3>Michael T.</h3>
+                            <p class="swiper-slide-text">Efficient and stress-free! Booking was easy, and the delivery
+                                team was very polite.</p>
+
+                        </div>
+                        <div class="rating-block">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <img src="images/hero_2.jpg" alt="repairMen" class="rating__hero">
+                        <div class="services__item-textBlock">
+                            <h3>Emily N.</h3>
+                            <p class="swiper-slide-text">I use them regularly for business shipments — always on time
+                                and very dependable.</p>
+
+                        </div>
+                        <div class="rating-block">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                            <img src="images/rating.svg" alt="star" class="rating-img">
+                        </div>
                     </div>
 
-                    <section class="contact__block-mainForm-phone">
-                        <div class="contact__block-mainForm">
-                            <input class="form__input" placeholder="Name">
-                            <input class="form__input" placeholder="Last Name">
-                            <input class="contact__block-input-position form__input" placeholder="Email">
-                            <input class="contact__block-input-position form__input" placeholder="Phone number">
-                            <textarea class="contact__block-text form__input" id="comment" name="comment"
-                                placeholder="Message" rows="3"></textarea>
-                        </div>
-                        <div class="contact__block-btn-position">
 
-                            <button class="contact__block-btn">Apply Nowds</button>
-                        </div>
-                    </section>
                 </div>
+                <div class="swiper-pagination"></div>
+            </section>
+
+
+            <section class="contact-section container">
+
+                <div class="contact-image">
+                    <img src="images/muzcina-rabotaet-voditelem-gruzovika.jpg" alt="Contact Us">
+                </div>
+                <form class="contact-form">
+
+                    <h2>Contact Us</h2>
+                    <div class="form-grid">
+                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Phone number">
+                    </div>
+                    <textarea placeholder="Your message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
             </section>
         </main>
         <footer class="footer">
             <div class="container footer-position">
                 <div>
-                    <h4>The Logistics Company That Always Delivers</h4>
-                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                    <h4>About Project</h4>
+                    <p>This is a training project created to showcase skills in HTML, CSS, and JavaScript, including
+                        responsive layout and working with APIs.</p>
                     <div class="footer__block-logos">
-                        <a href=""><img src="images/facebook_logo.svg" alt=""></a>
-                        <a href=""><img src="images/Vector.svg" alt=""></a>
-                        <a href="https://github.com/vldvrudenko">gitHub</a>
+                        <a href=""><img src="images/linkedIn.svg" alt=""></a>
+                        <a href=""><img src="images/gitHub.svg" alt=""></a>
+                        <a href=""><img src="images/resume.svg" alt=""></a>
                     </div>
                 </div>
                 <div class="footer-position-nav">
                     <div class="footer__block-nav-items">
-                        <h3>TERMS</h3>
-                        <a href="">Privacy Policy</a>
+                        <h3>GitHub</h3>
+                        <a href="" target="_blank">my GitHub</a>
                     </div>
                     <div class="footer__block-nav-items">
-                        <h3>LINKS</h3>
-                        <a href="">Job Application
-                        </a>
+                        <h3>LinkedIn</h3>
+                        <a href="" target="_blank">Мy LinkedIn</a>
                     </div>
                     <div class="footer__block-nav-items">
-                        <h3>CONTACT INFO</h3>
-                        <a href="">Map Location</a>
+                        <h3>Tech Stack</h3>
+                        <a href="" target="_blank">My stack</a>
+                        
                     </div>
                 </div>
             </div>
@@ -346,7 +303,9 @@
                 TOP TEAM CARRIERS © 2025 | All Rights Reserved.
             </div>
         </footer>
+
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
 </body>

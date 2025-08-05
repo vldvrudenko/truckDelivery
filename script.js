@@ -1,17 +1,17 @@
 window.addEventListener("DOMContentLoaded", () => {
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  
   loop: true,
   spaceBetween: 10,
 
   breakpoints: {
-    400: {
-      slidesPerView: 1.5,
+    375: {
+      slidesPerView: 1.75,
       spaceBetween: 20,
     },
 
-    768: {
-      slidesPerView: 2,
+    700: {
+      slidesPerView: 3,
       spaceBetween: 20,
     },
     1024: {
