@@ -24,13 +24,17 @@
             <div class="header__container-content">
                 <div class="navbar">
                     <div class="logo">
-                        <h2><img src="images/logo-transparent-png-removebg-preview.png" alt="logo" class="logo"></h2>
+                        <a href="index.html">
+                        <h2><img src="images/logo-transparent-png-removebg-preview.png" alt="logo" class="logo"></h2></a>
                     </div>
                     <ul class="links">
-                        <li><a href="index.html" class="navbar__links">Home</a></li>
                         <li><a href="aboutUs.html" class="navbar__links">About Us</a></li>
                         <li><a href="#" class="navbar__links">Careers</a></li>
                         <li><a href="#" class="navbar__links">Contact Us</a></li>
+                        <li class="links__signInSetts">
+                            <a href="admin.html" class="navbar__links navbar__links-signIn-pc"><img src="images/loginIcon.svg" alt="LogIn"></a>
+                            <a href="admin.html" class="navbar__links navbar__links-signIn">Log In</a>
+                        </li>
                     </ul>
                     <div class="toggle">
                         <div class="line1"></div>
@@ -67,6 +71,7 @@
 
 
         <main class="main">
+
             <h1 class="section__logo">What We Offer</h1>
             <section class="card-section container">
                 <div class="card__item">
@@ -257,17 +262,24 @@
                 <div class="contact-image">
                     <img src="images/muzcina-rabotaet-voditelem-gruzovika.jpg" alt="Contact Us">
                 </div>
-                <form class="contact-form">
-
+                <form class="contact-form" id="userForm">
+                    <!-- <form id="userForm">
+                        <input type="text" id="name" placeholder="Имя" required>
+                        <input type="email" id="nameS" placeholder="Email" required>
+                        <input type="number" id="age" placeholder="Возраст" required>
+                        <button type="submit" id="myButton">Отправить</button>
+                      </form> -->
+                      <!-- <p id="status"></p> -->
                     <h2>Contact Us</h2>
                     <div class="form-grid">
-                        <input type="text" placeholder="Name" required>
-                        <input type="text" placeholder="Last Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="tel" placeholder="Phone number">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                        <input type="text" id="email" placeholder="Email" required>
+                        <input type="number" id="phoneNumber" placeholder="Phone number">
                     </div>
-                    <textarea placeholder="Your message" rows="5" required></textarea>
-                    <button type="submit" class="btn">Send</button>
+                    <textarea placeholder="Your message" rows="5" id="message" required></textarea>
+                    <button type="submit" class="btn" id="myButton">Send</button>
+                    <p id="status"></p> 
                 </form>
             </section>
         </main>
@@ -295,7 +307,7 @@
                     <div class="footer__block-nav-items">
                         <h3>Tech Stack</h3>
                         <a href="" target="_blank">My stack</a>
-                        
+
                     </div>
                 </div>
             </div>
