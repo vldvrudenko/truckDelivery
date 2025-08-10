@@ -1,44 +1,4 @@
-// const url = "https://65182dcd582f58d62d357a76.mockapi.io/clients";
-
-// document.getElementById("userForm").addEventListener("submit", function(event) {
-//   event.preventDefault(); // чтобы не перезагружалась страница
-
-//   const data = {
-//     name: document.getElementById("name").value.trim(),
-//     email: document.getElementById("nameS").value.trim(),
-//     age: Number(document.getElementById("age").value),
-//   };
-
-//   // простая валидация, чтобы не отправлять пустые значения
-//   if (!data.name || !data.email || !data.age) {
-//     document.getElementById("status").textContent = "Пожалуйста, заполните все поля корректно";
-//     return;
-//   }
-
-//   fetch(url, {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json"
-//     },
-//     body: JSON.stringify(data)
-//   })
-//   .then(response => {
-//     if (!response.ok) {
-//       throw new Error("Ошибка сети");
-//     }
-//     return response.json();
-//   })
-//   .then(result => {
-//     document.getElementById("status").textContent = "Данные успешно отправлены!";
-//     // Можно очистить форму, если нужно
-//     document.getElementById("userForm").reset();
-//   })
-//   .catch(error => {
-//     document.getElementById("status").textContent = "Ошибка при отправке: " + error.message;
-//   });
-// });
 document.addEventListener("DOMContentLoaded", () => {
-  // Инициализация Swiper (если он есть на странице)
   if (document.querySelector(".mySwiper")) {
     new Swiper(".mySwiper", {
       loop: true,
@@ -60,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Навбар
   const navbar = document.querySelector(".navbar");
   if (navbar) {
     const toggle = navbar.querySelector(".toggle");
@@ -80,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const url = "https://65182dcd582f58d62d357a76.mockapi.io/clients";
 
-  // === Обработка формы ===
   const form = document.getElementById("userForm");
   if (form) {
     form.addEventListener("submit", function (event) {
@@ -93,9 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
         message: document.getElementById("message").value.trim(),
         phoneNumber: Number(document.getElementById("phoneNumber").value),
       };
-      
-      if (!data.name || !data.lastName || !data.email|| !data.message|| !data.phoneNumber) {
-        document.getElementById("status").textContent = "Пожалуйста, заполните все поля корректно";
+
+      if (!data.name || !data.lastName || !data.email || !data.message || !data.phoneNumber) {
+        document.getElementById("status").textContent = "Please fill in all fields correctly";
         return;
       }
 
@@ -105,20 +63,19 @@ document.addEventListener("DOMContentLoaded", () => {
         body: JSON.stringify(data),
       })
         .then((response) => {
-          if (!response.ok) throw new Error("Ошибка сети");
+          if (!response.ok) throw new Error("Network error");
           return response.json();
         })
         .then(() => {
-          document.getElementById("status").textContent = "Данные успешно отправлены!";
+          document.getElementById("status").textContent = "Data sent successfully!";
           form.reset();
         })
         .catch((err) => {
-          document.getElementById("status").textContent = "Ошибка: " + err.message;
+          document.getElementById("status").textContent = "Error: " + err.message;
         });
     });
   }
 
-  // === Вывод карточек клиентов ===
   const container = document.getElementById("clientsContainer");
 
   if (container) {
@@ -129,48 +86,55 @@ document.addEventListener("DOMContentLoaded", () => {
           const card = document.createElement("div");
           card.className = "client-card";
 
-          // Содержимое карточки
           card.innerHTML = `
-            <h2>Clients</h2>
-            <h3>Name: ${client.name}</h3>
-            <p>Last name: ${client.lastName}</p>
-            <p>Email: ${client.email}</p>
-            <p>Phone: ${client.phoneNumber}</p>
-            <p>Message: ${client.message}</p>
-            
+            <h2>Client</h2>
+            <h3><span class="clientLabel">Name:</span>  ${client.name}</h3>
+            <h3><span class="clientLabel">Last name:</span>  ${client.lastName}</h3>
+            <h3><span class="clientLabel">Email:</span>  ${client.email}</h3>
+            <h3><span class="clientLabel">Phone: </span> ${client.phoneNumber}</h3>
+            <h3><span class="clientLabel">Message: </span> ${client.message}</h3>
           `;
 
-          // Кнопка удаления
           const closeButton = document.createElement("button");
           closeButton.textContent = "Delete";
           closeButton.className = "close-btn";
 
-          // Удаление клиента
           closeButton.addEventListener("click", () => {
-            // Блокируем кнопку, чтобы не нажали повторно
             closeButton.disabled = true;
-
-            // Отправляем DELETE-запрос
             fetch(`${url}/${client.id}`, {
               method: "DELETE"
             })
               .then((res) => {
                 if (res.ok || res.status === 404) {
-                  card.remove(); // удаляем карточку из DOM
+                  card.remove();
                 } else {
-                  console.error("Ошибка при удалении клиента");
+                  console.error("Error deleting client:");
                 }
               })
-              .catch((err) => console.error("Ошибка сети:", err));
+              .catch((err) => console.error("Network error", err));
           });
 
-          // Добавляем кнопку в карточку
           card.appendChild(closeButton);
 
-          // Добавляем карточку в контейнер
           container.appendChild(card);
         });
       })
-      .catch((error) => console.error("Ошибка при получении данных:", error));
+      .catch((error) => console.error("Error retrieving data:", error));
   }
+});
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
