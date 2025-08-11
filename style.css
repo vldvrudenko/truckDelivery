@@ -931,7 +931,7 @@ h1 {
 
 @media (max-width: 768px) {
     .slogan {
-        padding: 0 25px;
+        padding:  25px;
     }
 
     .slogan__img-small {
