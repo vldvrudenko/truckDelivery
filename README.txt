@@ -1,91 +1,90 @@
-Архитектура и структура
-Страницы:
+Project Overview: Truck Delivery
+This is a web project featuring a one-page website for a trucking company, with a separate administration panel for managing requests.
 
-index.html — главная страница (будет расширена в будущем).
+Architecture and Structure
+Pages:
 
-aboutUs.html — страница "О компании" с миссией, историей, отзывами и контактной формой.
+index.html — The main landing page with company information, services, and testimonials.
 
-admin.html — административная панель для просмотра полученных через форму заявок.
+aboutUs.html — The "About Us" page with the company's mission and history.
+
+contactUs.html — A dedicated contact page with a form, company contact details, and a map.
+
+admin.html — The administration panel for viewing, adding, and deleting client requests.
 
 CSS:
 
-reset.css — обнуление браузерных стилей для кроссбраузерности и единообразия.
+reset.css — Resets browser default styles for cross-browser consistency.
 
-styles.css — кастомные стили, построенные с использованием современных методологий (частично BEM).
+styles.css — The main project styles, written using the BEM methodology (Block, Element, Modifier) for improved readability and maintainability.
 
-Используются Google Fonts: Archivo (для заголовков), Quicksand (для основного текста).
-
-Swiper — библиотека для создания отзывчивого слайдера отзывов.
+Google Fonts are used: Archivo (for headings), Quicksand (for body text).
 
 JavaScript:
 
-Управление меню (бургер для мобильных).
+Implements a mobile-friendly burger menu.
 
-Кнопка "Наверх" с плавным скроллом.
+A "Scroll to Top" button with a smooth scroll function.
 
-Отправка данных формы на внешний API (MockAPI.io) с асинхронной обработкой.
+Sends contact form data to an external API (MockAPI.io).
 
-Получение и отображение заявок на админ-странице.
+Retrieves and displays requests on the admin page.
 
-Инициализация слайдера Swiper.
+Initializes the Swiper.js library for the testimonial slider.
 
-API:
+Technologies and Libraries Used
+HTML5: Semantic page structure for better accessibility and SEO.
 
-Использован сервис MockAPI.io для имитации backend — хранения и получения данных клиентов.
+CSS3 (Flexbox/Grid): Responsive design with modern positioning methods and media queries.
 
-Использованные технологии и библиотеки
-Технология	Цель и применение
-HTML5	Семантическая структура страниц с учётом доступности и SEO
-CSS3 + Flexbox/Grid	Адаптивная верстка с современными методами позиционирования, медиазапросы
-Reset CSS	Сброс стилей браузера для единого внешнего вида
-Google Fonts	Подключение кастомных шрифтов для улучшения визуального восприятия
-JavaScript (Vanilla)	Интерфейсные взаимодействия: меню, формы, кнопки, анимации, AJAX-запросы к MockAPI
-Swiper.js	Кроссплатформенный слайдер отзывов с отзывчивым дизайном и пагинацией
-MockAPI.io	Псевдо-backend для хранения и работы с данными формы (GET, POST запросы)
+JavaScript (Vanilla): Handles user interactions, animations, and asynchronous API requests.
 
-Особенности и технические решения
-1. Семантическая разметка и доступность
-Использованы структурные элементы (<header>, <main>, <section>, <footer>) для логической организации контента.
+Swiper.js: A cross-platform library for a responsive testimonial slider.
 
-Альтернативные тексты к изображениям обеспечивают поддержку скринридеров.
+MockAPI.io: A mock backend used for storing and retrieving form data via a REST API.
 
-Чёткая иерархия заголовков облегчает навигацию для пользователей и поисковиков.
+Key Features and Technical Solutions
+Semantic Markup and Accessibility
 
-2. Адаптивный дизайн
-Макет гибко подстраивается под разные размеры экранов с помощью медиазапросов.
+Structural HTML5 elements (<header>, <main>, <section>, <footer>) are used to organize content logically.
 
-Меню преобразуется в бургер-меню на мобильных.
+Image alternative texts are included for screen reader support.
 
-Использованы CSS Flexbox и Grid для выравнивания и расположения элементов.
+A clear heading hierarchy (<h1>, <h2>, etc.) is used to properly structure content.
 
-3. Интерактивность через JavaScript
-Меню-бургер — плавное открытие/закрытие навигации.
+Responsive Design
 
-Кнопка "Наверх" появляется при скролле и плавно прокручивает страницу.
+The layout dynamically adapts to different screen sizes using media queries.
 
-Отправка формы с асинхронным запросом на MockAPI с валидацией.
+The navigation menu transforms into a burger menu on smaller screens.
 
-Админ-панель динамически загружает данные с API и отображает их в удобном формате.
+Lazy loading is implemented for images to optimize page load times.
 
-4. Работа с API
-В проекте реализована интеграция с MockAPI для имитации REST API, что позволяет:
+JavaScript Interactivity
 
-Отправлять данные формы (POST).
+The burger menu provides a smooth open/close animation.
 
-Получать список заявок (GET).
+The "Scroll to Top" button appears on scroll and ensures a smooth return to the top of the page.
 
-Все запросы выполнены с помощью Fetch API с использованием async/await.
+The contact form sends data to MockAPI with client-side validation.
 
-5. Слайдер отзывов
-Swiper.js обеспечивает отзывчивый слайдер с пагинацией.
+The admin panel dynamically loads and manages data from the API.
 
-Отзывы оформлены карточками с изображением клиента, текстом и рейтингом.
+API Integration
 
-Лёгкий и кроссбраузерный слайдер улучшает UX.
+The project is integrated with MockAPI to simulate a real backend.
 
+Basic CRUD (Create, Read, Update, Delete) operations are implemented for client requests.
 
-Контакты и ссылки
+All requests are handled using the Fetch API.
+
+Testimonial Slider
+
+Swiper.js is used to create a responsive slider with navigation and pagination.
+
+Testimonials are presented as individual cards with client images, text, and ratings.
+
+Contact Information
 LinkedIn: https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/
 
 GitHub: https://github.com/vldvrudenko
-

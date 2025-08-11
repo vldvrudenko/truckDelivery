@@ -2,10 +2,12 @@ body {
     background: #f3f4f6;
     min-width: 375px;
 }
+
 .container {
     max-width: 1056px;
     margin: auto;
 }
+
 h1,
 h2,
 h3,
@@ -13,22 +15,31 @@ h4,
 h5 {
     font-family: "Archivo", sans-serif;
 }
+
 h3 {
     font-size: 17px;
 }
-h2 {
-    font-size: 35px;
-    color: #162f75;
+
+
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #1e3a8a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 17px;
 }
 
 button,
 a {
     cursor: pointer;
-
     font-family: "Archivo", sans-serif;
 }
 
-button {
+.btn {
     display: inline-block;
     background: linear-gradient(135deg, #f97316, #ff8c42);
     color: white;
@@ -44,20 +55,22 @@ button {
     letter-spacing: 0.5px;
 }
 
-button:hover {
+.btn img {
+    width: 45px;
+    height: auto;
+}
+
+.btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(249, 115, 22, 0.6);
     background: linear-gradient(135deg, #ff8c42, #f97316);
 }
 
-button:active {
+.btn:active {
     transform: translateY(0);
-    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
+    box-shadow: 4px 12px rgba(249, 115, 22, 0.4);
 }
-p {
-    font-family: "Quicksand", sans-serif;
-    font-size: 17px;
-}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -67,22 +80,59 @@ p {
 main {
     flex: 1;
 }
-
-footer {
-    background: #333;
-    color: #fff;
+main h2{
     padding: 20px;
 }
-.titleSecound {
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 0;
-}
+
+
 .mission__logo {
     text-align: center;
     margin: 25px 0;
 }
+
+.header__bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mainPage__bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(./images/gruzovik-na-sosse-pri-zahode-solnca.jpg);
+}
+
+.aboutUs__bg {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/transportnoe-sredstvo-na-doroge.jpg);
+}
+
+.header__container {
+    padding-top: 220px;
+    padding-left: 100px;
+}
+
+.header__container h2{
+    text-align: start;
+}
+h1 {
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: #fb923c;
+}
+.header__container h3 {
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+    color: #1e3a8a;
+}
+
+.header__container p {
+    font-size: 20px;
+    padding-bottom: 10px;
+    max-width: 550px;
+}
+
 .navbar {
     background-color: rgba(242, 242, 242, 0.9);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -97,6 +147,7 @@ footer {
     width: 100%;
     z-index: 99;
 }
+
 .navbar__links {
     text-transform: uppercase;
     font-size: 23px;
@@ -107,10 +158,12 @@ footer {
     text-decoration: none;
     align-items: center;
 }
+
 .navbar__links img {
     width: 25px;
     height: auto;
 }
+
 .navbar__links:after {
     padding-bottom: 2px;
     display: block;
@@ -123,17 +176,21 @@ footer {
     margin-top: 5px;
     transition: width 0.3s ease-out;
 }
+
 .navbar__links-signIn {
     display: none;
 }
+
 .navbar__links-signIn-pc {
     display: block;
 }
+
 .links__signInSetts img {
     width: 30px;
     height: auto;
     padding-right: 5px;
 }
+
 .navbar__links:hover:after,
 .navbar__links:focus:after {
     width: 100%;
@@ -143,6 +200,7 @@ footer {
     width: 250px;
     height: 120px;
 }
+
 .navbar ul.links {
     margin-left: auto;
     margin-right: 50px;
@@ -154,6 +212,7 @@ footer {
         0s ease background;
     height: 100%;
 }
+
 .navbar ul.links li {
     text-transform: uppercase;
     padding: 0 15px;
@@ -166,12 +225,18 @@ footer {
         0s ease margin;
 }
 
+.toggle {
+    display: none;
+}
+
+
 .card-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
 }
+
 .card__item {
     padding: 15px;
     background: #fff;
@@ -180,24 +245,18 @@ footer {
     box-shadow: 0 2px 8px rgba(24, 10, 224, 0.3);
     max-width: 300px;
 }
+
 .card__item:hover {
     transform: translateY(-5px);
 }
+
 .card__item img {
     width: 60px;
     height: 60px;
 }
-.card__item-logo {
-    font-size: 19px;
-    color: #1e3a8a;
-}
-.section__logo {
-    color: #1e3a8a;
-    padding: 15px 15px;
-    text-align: center;
-    font-size: 48px;
-    text-transform: uppercase;
-}
+
+
+
 .card__item-text {
     font-size: 17px;
     color: #1f2937;
@@ -205,36 +264,36 @@ footer {
 
 .services {
     margin-top: 25px;
-    padding: 25px 0;
+    padding-bottom: 25px ;
     background-image: url(images/footer_bg.jpg);
 }
+
 .services__item {
     background: #f3f4f6;
     max-width: 220px;
-
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border-radius: 15px;
 }
+
 .services__item img {
     width: 220px;
     height: auto;
     border-radius: 15px 15px 0 0;
 }
+
 .services__block {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
 }
-.services__item-textBlock h3 {
-    padding-bottom: 3px;
-    color: #1e3a8a;
-}
+
+
 .services__item-textBlock {
     padding: 10px;
 }
 
-.midleSection__contacts {
+.contacts-section {
     margin-top: 25px;
     text-align: center;
     background-position: center center;
@@ -243,9 +302,11 @@ footer {
     padding: 45px 0;
     background-image: url(images/footer_bg.jpg);
 }
-.midleSection__contacts h2 {
+
+.contacts-section h2 {
     padding: 0px 25px 15px 25px;
 }
+
 .card-infoBlock {
     display: flex;
     flex-wrap: wrap;
@@ -253,6 +314,7 @@ footer {
     gap: 1.5rem;
     margin: 0 25px;
 }
+
 .card-infoBlock-item {
     display: flex;
     align-items: center;
@@ -263,17 +325,17 @@ footer {
     box-shadow: 0 2px 8px rgba(24, 10, 224, 0.3);
     max-width: 400px;
 }
+
 .card-infoBlock-item div {
     padding: 10px 10px 0 10px;
 }
-.card-infoBlock-logo {
-    padding: 25px 0;
-    text-align: center;
-}
+
+
 .card-infoBlock-item img {
     width: 55px;
     height: auto;
 }
+
 .card-infoBlock-item:hover {
     transform: translateY(-5px);
 }
@@ -285,14 +347,13 @@ footer {
     align-items: center;
     text-align: center;
 }
+
 .swiper-slide {
     text-align: center;
     justify-content: center;
     align-items: center;
 }
-.swiper h2 {
-    margin: 25px 25px;
-}
+
 .swiper-slide {
     display: block;
     width: 100%;
@@ -301,24 +362,24 @@ footer {
     background: #fff;
     padding: 15px;
     box-shadow: 0 2px 8px rgba(24, 10, 224, 0.3);
-
     border-radius: 15px;
 }
+
 .rating-img {
     width: 35px;
     height: auto;
     margin: 5px;
 }
+
 .rating-block {
     display: flex;
     justify-self: center;
 }
-.contactcForm {
-    background-image: url(images/footer_bg.jpg);
-}
+
 .swiper-slide {
     border-bottom: 2px solid #3b82f6;
 }
+
 .swiper-slide-text {
     border-top: 2px solid #f3f4f6;
     border-bottom: 2px solid #f3f4f6;
@@ -333,97 +394,6 @@ footer {
     object-fit: cover;
     border-radius: 5px 0 50px 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-.contact__block {
-    background: #fff;
-    padding: 25px;
-    box-shadow: 0 2px 8px rgba(30, 58, 138, 0.08);
-    max-width: 500px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    border-radius: 15px;
-}
-.contact__block p {
-    padding-top: 10px;
-}
-
-.contact__input {
-    padding: 15px;
-    border: 1px solid #827437;
-    font-size: 26px;
-    color: #000;
-    font-family: "Archivo", sans-serif;
-    border-radius: 15px;
-    background: #eaeaea;
-    margin-top: 25px;
-}
-.slogan {
-    display: flex;
-    gap: 30px;
-    padding-left: 45px;
-    color: #fff;
-}
-.slogan__textBlock {
-    flex: 1;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: center;
-}
-.slogan__photoBlock {
-    display: flex;
-    gap: 20px;
-}
-.slogan__img {
-    display: grid;
-}
-.slogan__img img {
-    width: 250px;
-    height: auto;
-}
-.slogan__img-small {
-    display: grid;
-}
-.slogan__img-small img {
-    margin-top: 20px;
-    margin-left: 15px;
-    width: 220px;
-    height: auto;
-}
-.header__bg {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.mainPage__bg {
-    background-image: url(./images/gruzovik-na-sosse-pri-zahode-solnca.jpg);
-}
-.aboutUs__bg {
-    background-image: url(images/transportnoe-sredstvo-na-doroge.jpg);
-}
-
-.header__container {
-    padding-top: 220px;
-    padding-left: 100px;
-}
-.header__container h1 {
-    font-size: 70px;
-    color: #1e3a8a;
-}
-.header__container h3 {
-    font-size: 25px;
-    padding: 10px 0 10px 0;
-    color: #1e3a8a;
-}
-.header__container p {
-    font-size: 20px;
-    padding-bottom: 10px;
-    max-width: 550px;
 }
 
 .contact-section {
@@ -482,8 +452,164 @@ footer {
 .contact-form textarea {
     resize: none;
 }
+
 .contact-form {
     text-align: center;
+}
+
+.contact-header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+        url(images/voditel-gruzovika-osmatrivaet-gruzovik-dlinnyi-avtomobil-pered-vozdeniem.jpg);
+    text-align: center;
+}
+
+.contact-header__title {
+    color: #fb923c;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.contact-header__description {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+.language-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-buttons a {
+    margin-top: 20px;
+}
+
+.contact-info-left {
+    padding-right: 10px;
+    border-right: 1px solid #1e3a8a;
+}
+
+.contact-info-left p {
+    padding: 15px 0;
+}
+
+.language-list li {
+    background-color: #e0e6ef;
+    color: #1e3a8a;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-info-right {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.story__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+}
+
+.story__block p {
+    padding: 5px 0;
+    font-size: 19px;
+}
+
+.story__block-first {
+    padding-right: 20px;
+}
+
+.story__block-first img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.story__block-secound {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.story__block-secound-item {
+    display: flex;
+    align-items: center;
+}
+
+.story__block-secound-item div img {
+    width: 180px;
+    height: auto;
+    padding-right: 15px;
+}
+
+
+
+.story__block h4 {
+    color: #fb923c;
+    font-size: 20px;
+}
+
+.story__block-logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.slogan {
+    display: flex;
+    gap: 30px;
+    padding-left: 45px;
+    color: #fff;
+}
+
+.slogan__textBlock {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slogan__photoBlock {
+    display: flex;
+    gap: 20px;
+}
+
+.slogan__img {
+    display: grid;
+}
+
+.slogan__img img {
+    width: 250px;
+    height: auto;
+}
+
+.slogan__img-small {
+    display: grid;
+}
+
+.slogan__img-small img {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 220px;
+    height: auto;
 }
 
 .footer {
@@ -494,14 +620,17 @@ footer {
     color: #fff;
     padding-top: 50px;
 }
+
 .footer-position {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
+
 .footer-position-nav {
     justify-content: space-around;
     display: flex;
 }
+
 .footer-position-certification {
     text-align: center;
     border-top: 0.5px solid rgb(176, 171, 171);
@@ -509,6 +638,7 @@ footer {
     margin-top: 50px;
     color: #fb923c;
 }
+
 .footer__block-logos {
     justify-content: space-between;
     max-width: 200px;
@@ -516,22 +646,27 @@ footer {
     text-align: center;
     display: flex;
 }
+
 .footer__block-logos img {
     width: 25px;
     height: auto;
 }
+
 .footer__block-nav-items h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
 .footer-position h4 {
     font-size: 28px;
     margin-bottom: 15px;
 }
+
 .footer-position p {
     font-size: 16px;
     margin-bottom: 15px;
 }
+
 .footer-position a {
     color: #fb923c;
     font-size: 19px;
@@ -554,14 +689,6 @@ footer {
     text-align: center;
 }
 
-.admin__main-user {
-    padding: 15px;
-    background: #fff;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
 .client-card {
     text-align: start;
     border: 1px solid #ccc;
@@ -572,6 +699,7 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
+
 .client-card h3 {
     margin: 0 0 8px;
     word-wrap: break-word;
@@ -579,6 +707,7 @@ footer {
     white-space: pre-wrap;
     font-weight: 300;
 }
+
 .clientLabel {
     color: #1e3a8a;
     font-weight: bold;
@@ -613,142 +742,10 @@ footer {
 #scrollTopBtn:hover {
     transform: scale(1.1);
 }
+
 .topImg {
     height: 50px;
     width: auto;
-}
-.story__block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 20px;
-}
-.story__block p {
-    padding: 5px 0;
-    font-size: 19px;
-}
-.story__block-first {
-    padding-right: 20px;
-}
-.story__block-first img {
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 10px;
-    display: block;
-}
-.story__block-secound {
-    display: grid;
-    grid-gap: 20px;
-}
-.story__block-secound-item {
-    display: flex;
-    align-items: center;
-}
-.story__block-secound-item div img {
-    width: 180px;
-    height: auto;
-    padding-right: 15px;
-}
-
-.story__block h3 {
-    color: #1e3a8a;
-    font-size: 20px;
-}
-.story__block h4 {
-    color: #fb923c;
-    font-size: 20px;
-}
-
-.story__block-logo {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.contact-header {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 200px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-        url(images/voditel-gruzovika-osmatrivaet-gruzovik-dlinnyi-avtomobil-pered-vozdeniem.jpg);
-    text-align: center;
-}
-.contact-header__title {
-    color: #fb923c;
-    font-size: 55px;
-    font-weight: bold;
-}
-.contact-header__description {
-    color: #fff;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    background: linear-gradient(135deg, #f97316, #ff8c42);
-    color: white;
-    padding: 14px 28px;
-    border: none;
-    border-radius: 12px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 15px rgba(10, 5, 1, 0.4);
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    letter-spacing: 0.5px;
-}
-.btn img {
-    width: 45px;
-    height: auto;
-}
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(249, 115, 22, 0.6);
-    background: linear-gradient(135deg, #ff8c42, #f97316);
-}
-
-.btn:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
-}
-.contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    padding: 30px;
-}
-
-.language-list {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.contact-buttons a {
-    margin-top: 20px;
-}
-.contact-info-left {
-    padding-right: 10px;
-    border-right: 1px solid #1e3a8a;
-}
-.contact-info-left p {
-    padding: 15px 0;
-}
-.language-list li {
-    background-color: #e0e6ef;
-    color: #1e3a8a;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: bold;
-}
-.contact-info-right {
-    text-align: center;
-    padding-top: 40px;
 }
 
 @keyframes rgbGlow {
@@ -799,23 +796,26 @@ footer {
         background: rgba(24, 22, 22, 0.5);
         height: 100vh;
     }
-    .header__container h1 {
-        color: #1e3a8a;
-    }
+
     .header__container h3 {
         color: #fb923c;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
+
     .header__container p {
         color: white;
     }
 }
+
 @media (max-width: 1200px) {
     .footer {
         padding: 50px 50px 0 50px;
     }
+
     .contact-image {
         display: none;
     }
+
     .header__container {
         padding-top: 150px;
     }
@@ -824,6 +824,7 @@ footer {
         max-height: 500px;
         padding-bottom: 120px;
     }
+
     .toggle {
         position: absolute;
         top: 45px;
@@ -841,31 +842,39 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     .toggle > * {
         width: 90%;
         height: 2px;
         background: #1e3a8a;
         margin: 3px 0;
     }
+
     .navbar.collapsed .toggle .line1 {
         transform: rotate(-45deg) translate(-4px, 5px);
     }
+
     .navbar.collapsed .toggle .line2 {
         opacity: 0;
     }
+
     .navbar.collapsed .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+
     .navbar.collapsed .logo {
         position: absolute;
         z-index: 44;
     }
+
     .navbar__links-signIn {
         display: block;
     }
+
     .navbar__links-signIn-pc {
         display: none;
     }
+
     .navbar .links {
         position: fixed;
         background: rgba(24, 22, 22, 0.9);
@@ -876,18 +885,19 @@ footer {
         width: 75vw;
         height: 100vh;
     }
+
     .navbar .links li:first-child {
         margin-top: 80px;
     }
+
     .navbar.collapsed .links {
         left: 0;
     }
+
     .navbar.collapsed .links a {
         color: #fff;
     }
-    .navbar.collapsed .links li {
-        width: 100%;
-    }
+
     .navbar.collapsed .links li:hover a {
         color: #fb923c;
     }
@@ -897,21 +907,28 @@ footer {
         opacity: 0.8;
     }
 }
-
+@media (max-width: 1040px) {
+.contact-info-right{
+    padding: 0;
+}}
 @media (max-width: 933px) {
     .card-infoBlock-item {
         max-width: 390px;
     }
+
     .story__block-first {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .story__block-first img {
         display: none;
     }
+
     .story__block {
         display: block;
     }
+
     .slogan_bg {
         background-position: right center;
     }
@@ -921,103 +938,139 @@ footer {
     .slogan {
         padding: 0 25px;
     }
+
     .slogan__img-small {
         display: none;
     }
+
     .header__bg {
         max-height: 500px;
     }
+
     .header__container {
         padding: 150px 25px 0 25px;
     }
-    .header__container h1 {
+    h1 {
+        font-size: 45px;
+      }
+      h2 {
         font-size: 35px;
-    }
+      }
+
     .header__container h3 {
         font-size: 30px;
     }
+
     .header__container p {
         font-size: 20px;
         padding-bottom: 20px;
     }
+
     .contact-section {
         flex-direction: column;
     }
+
     .footer-position {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     .footer-position-nav {
         margin-top: 50px;
     }
+
     .footer-position-nav {
         justify-content: space-between;
     }
+
     .card-infoBlock-item {
         max-width: 300px;
     }
 }
+
 @media (max-width: 733px) {
     .card-infoBlock-item {
         max-width: 400px;
     }
+
     .contact-container {
         display: block;
         padding: 15px;
     }
+
     .contact-info-right {
         padding-top: 20px;
         border-top: 2px solid #fb923c;
         margin-top: 20px;
     }
+
     .contact-info-left {
         border: none;
     }
 }
+
 @media (max-width: 507px) {
     .contact-buttons a {
         margin-top: 20px;
     }
+
     .contact-buttons {
         margin-top: 0;
     }
 }
+
 @media (max-width: 500px) {
     .slogan__img {
         display: none;
     }
+
     .slogan {
         gap: 0px;
         text-align: center;
     }
+
     .slogan p {
         text-align: start;
     }
+
     .story__block-secound-item {
         display: block;
     }
+
     .story__block-secound-item div img {
         width: 95%;
         border-radius: 5%;
         padding: 10px;
     }
+
     .story__block-secound-item-text {
         padding: 0 15px;
     }
 }
+
 @media (max-width: 464px) {
+    h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 25px;
+      }
     .header__bg {
         padding-bottom: 140px;
     }
+
     .services__item {
         max-width: 320px;
     }
+
     .services__item img {
         width: 320px;
     }
+
     .services__block {
         gap: 2rem;
     }
+
     .footer-position-nav {
         display: flex;
         flex-wrap: wrap;
@@ -1025,9 +1078,11 @@ footer {
         gap: 1.5rem;
         text-align: center;
     }
+
     .form-grid {
         grid-template-columns: 1fr;
     }
+
     .card-infoBlock {
         margin: 0 25px;
     }

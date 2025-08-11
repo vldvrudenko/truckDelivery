@@ -96,8 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
           `;
 
           const closeButton = document.createElement("button");
-          closeButton.textContent = "Delete";
-          closeButton.className = "close-btn";
+          closeButton.textContent = "Delete Client";
+          closeButton.className = "close-btn btn";
 
           closeButton.addEventListener("click", () => {
             closeButton.disabled = true;
