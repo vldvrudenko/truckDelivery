@@ -238,7 +238,7 @@ footer {
 .midleSection__contacts {
     margin-top: 25px;
     text-align: center;
-    background-position: center center; /* по центру по X и Y */
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 45px 0;
@@ -664,13 +664,12 @@ footer {
     margin: 20px 0;
 }
 
-/* Clean */
+
 .contact-header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 200px 0;
-
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
         url(images/voditel-gruzovika-osmatrivaet-gruzovik-dlinnyi-avtomobil-pered-vozdeniem.jpg);
     text-align: center;
@@ -755,7 +754,7 @@ margin-top: 20px;
     padding-top: 40px;
 }
 
-/* Clean */
+
 
 @keyframes rgbGlow {
     0% {
@@ -927,9 +926,6 @@ margin-top: 20px;
     .slogan {
         padding: 0 25px;
     }
-    /* .slogan__img{
-        display: none;
-    } */
     .slogan__img-small {
         display: none;
     }
