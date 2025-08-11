@@ -73,7 +73,7 @@ footer {
     color: #fff;
     padding: 20px;
 }
-.titleSecound{
+.titleSecound {
     font-size: 50px;
     text-align: center;
     font-weight: bold;
@@ -103,8 +103,8 @@ footer {
     letter-spacing: 1px;
     font-family: "Archivo", sans-serif;
     position: relative;
-    line-height: 1; /*задаём высоту строки*/
-    text-decoration: none; /*убираем подчёркивание*/
+    line-height: 1;
+    text-decoration: none;
     align-items: center;
 }
 .navbar__links img {
@@ -115,13 +115,13 @@ footer {
     padding-bottom: 2px;
     display: block;
     position: absolute;
-    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-    width: 0; /*задаём длинну линии до наведения курсора*/
-    height: 2px; /*задаём ширину линии*/
-    background-color: #1e3a8a; /*задаём цвет линии*/
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1e3a8a;
     content: "";
     margin-top: 5px;
-    transition: width 0.3s ease-out; /*задаём время анимации*/
+    transition: width 0.3s ease-out;
 }
 .navbar__links-signIn {
     display: none;
@@ -136,7 +136,7 @@ footer {
 }
 .navbar__links:hover:after,
 .navbar__links:focus:after {
-    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+    width: 100%;
 }
 
 .logo {
@@ -177,7 +177,6 @@ footer {
     background: #fff;
     border-radius: 15px;
     text-align: center;
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
     box-shadow: 0 2px 8px rgba(24, 10, 224, 0.3);
     max-width: 300px;
 }
@@ -664,7 +663,6 @@ footer {
     margin: 20px 0;
 }
 
-
 .contact-header {
     background-repeat: no-repeat;
     background-size: cover;
@@ -686,7 +684,6 @@ footer {
 }
 
 .btn {
-
     display: inline-block;
     background: linear-gradient(135deg, #f97316, #ff8c42);
     color: white;
@@ -700,10 +697,10 @@ footer {
     font-weight: 600;
     cursor: pointer;
     letter-spacing: 0.5px;
-
 }
-.btn img{
-    width: 45px;height: auto;
+.btn img {
+    width: 45px;
+    height: auto;
 }
 .btn:hover {
     transform: translateY(-3px);
@@ -715,7 +712,7 @@ footer {
     transform: translateY(0);
     box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
 }
-.contact-container{
+.contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -731,14 +728,14 @@ footer {
     gap: 10px;
 }
 
-.contact-buttons a{
-margin-top: 20px;
+.contact-buttons a {
+    margin-top: 20px;
 }
-.contact-info-left{
+.contact-info-left {
     padding-right: 10px;
     border-right: 1px solid #1e3a8a;
 }
-.contact-info-left p{
+.contact-info-left p {
     padding: 15px 0;
 }
 .language-list li {
@@ -749,12 +746,10 @@ margin-top: 20px;
     font-size: 14px;
     font-weight: bold;
 }
-.contact-info-right{
+.contact-info-right {
     text-align: center;
     padding-top: 40px;
 }
-
-
 
 @keyframes rgbGlow {
     0% {
@@ -966,25 +961,26 @@ margin-top: 20px;
     .card-infoBlock-item {
         max-width: 400px;
     }
-    .contact-container{
+    .contact-container {
         display: block;
         padding: 15px;
     }
-    .contact-info-right{
+    .contact-info-right {
         padding-top: 20px;
         border-top: 2px solid black;
-        margin-top: 20px;}
-    .contact-info-left{
+        margin-top: 20px;
+    }
+    .contact-info-left {
         border: none;
     }
 }
 @media (max-width: 507px) {
-.contact-buttons a{
-    margin-top: 20px;
-}
-.contact-buttons{
-    margin-top: 0;
-}
+    .contact-buttons a {
+        margin-top: 20px;
+    }
+    .contact-buttons {
+        margin-top: 0;
+    }
 }
 @media (max-width: 500px) {
     .slogan__img {
