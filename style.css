@@ -84,10 +84,8 @@ main h2{
     padding: 20px;
 }
 
-
 .mission__logo {
     text-align: center;
-    margin: 25px 0;
 }
 
 .header__bg {
@@ -560,8 +558,6 @@ h1 {
     padding-right: 15px;
 }
 
-
-
 .story__block h4 {
     color: #fb923c;
     font-size: 20px;
@@ -569,7 +565,6 @@ h1 {
 
 .story__block-logo {
     text-align: center;
-    margin: 20px 0;
 }
 
 .slogan {
@@ -1050,10 +1045,10 @@ h1 {
 
 @media (max-width: 464px) {
     h1 {
-        font-size: 30px;
+        font-size: 35px;
       }
       h2 {
-        font-size: 25px;
+        font-size: 30px;
       }
     .header__bg {
         padding-bottom: 140px;
