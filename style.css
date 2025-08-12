@@ -99,11 +99,11 @@ main h2{
 
 .mainPage__bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(./images/gruzovik-na-sosse-pri-zahode-solnca.jpg);
+        url(images/truckingServices_bg.jpg);box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
 }
 
 .aboutUs__bg {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/transportnoe-sredstvo-na-doroge.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/aboutUs_bg.jpg);box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
 }
 
 .header__container {
@@ -127,8 +127,11 @@ h1 {
 
 .header__container p {
     font-size: 20px;
-    padding-bottom: 10px;
-    max-width: 550px;
+    padding: 20px 0;
+    line-height: 1.4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    letter-spacing: 2px;
+    max-width: 750px;
 }
 
 .navbar {
@@ -240,7 +243,7 @@ h1 {
     background: #fff;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(24, 10, 224, 0.3);
+    box-shadow: 0 2px 8px #1e3a8a;
     max-width: 300px;
 }
 
@@ -253,8 +256,6 @@ h1 {
     height: 60px;
 }
 
-
-
 .card__item-text {
     font-size: 17px;
     color: #1f2937;
@@ -262,8 +263,9 @@ h1 {
 
 .services {
     margin-top: 25px;
-    padding-bottom: 25px ;
+    padding: 25px ;
     background-image: url(images/footer_bg.jpg);
+    box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
 }
 
 .services__item {
@@ -298,7 +300,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 45px 0;
-    background-image: url(images/footer_bg.jpg);
+    background-image: url(images/footer_bg.jpg);box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
 }
 
 .contacts-section h2 {
@@ -426,10 +428,6 @@ h1 {
     background: white;
 }
 
-.contact-form h2 {
-    margin-bottom: 10px;
-}
-
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -461,8 +459,8 @@ h1 {
     background-position: center;
     padding: 200px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-        url(images/voditel-gruzovika-osmatrivaet-gruzovik-dlinnyi-avtomobil-pered-vozdeniem.jpg);
-    text-align: center;
+        url(images/contactUs_bg.jpg);
+    text-align: center;box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
 }
 
 .contact-header__title {
@@ -648,23 +646,19 @@ h1 {
 }
 
 .footer__block-nav-items h3 {
-    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .footer-position h4 {
-    font-size: 28px;
     margin-bottom: 15px;
 }
 
 .footer-position p {
-    font-size: 16px;
     margin-bottom: 15px;
 }
 
 .footer-position a {
     color: #fb923c;
-    font-size: 19px;
 }
 
 .admin__main-user {
@@ -731,7 +725,7 @@ h1 {
     animation:
         rgbGlow 3s linear infinite,
         pulse 1.5s infinite;
-    box-shadow: 0 0 15px #ff0000;
+    box-shadow: 0 0 15px #fb923c;
 }
 
 #scrollTopBtn:hover {
@@ -741,39 +735,6 @@ h1 {
 .topImg {
     height: 50px;
     width: auto;
-}
-
-@keyframes rgbGlow {
-    0% {
-        box-shadow:
-            0 0 15px red,
-            0 0 30px red;
-        color: red;
-    }
-    25% {
-        box-shadow:
-            0 0 15px orange,
-            0 0 30px orange;
-        color: orange;
-    }
-    50% {
-        box-shadow:
-            0 0 15px lime,
-            0 0 30px lime;
-        color: lime;
-    }
-    75% {
-        box-shadow:
-            0 0 15px cyan,
-            0 0 30px cyan;
-        color: cyan;
-    }
-    100% {
-        box-shadow:
-            0 0 15px magenta,
-            0 0 30px magenta;
-        color: magenta;
-    }
 }
 
 @keyframes pulse {
@@ -803,6 +764,12 @@ h1 {
 }
 
 @media (max-width: 1200px) {
+.slogan__textBlock{
+    gap: 0px;
+}
+.slogan p {
+    padding: 20px 0;
+}
     .footer {
         padding: 50px 50px 0 50px;
     }
@@ -813,6 +780,7 @@ h1 {
 
     .header__container {
         padding-top: 150px;
+        padding-right: 100px;
     }
 
     .header__bg {
@@ -927,6 +895,9 @@ h1 {
     .slogan_bg {
         background-position: right center;
     }
+    .slogan__img-small {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -934,9 +905,7 @@ h1 {
         padding:  25px;
     }
 
-    .slogan__img-small {
-        display: none;
-    }
+
 
     .header__bg {
         max-height: 500px;
@@ -1002,6 +971,9 @@ h1 {
     .contact-info-left {
         border: none;
     }
+    .slogan__img {
+        display: none;
+    }
 }
 
 @media (max-width: 507px) {
@@ -1015,9 +987,7 @@ h1 {
 }
 
 @media (max-width: 500px) {
-    .slogan__img {
-        display: none;
-    }
+
 
     .slogan {
         gap: 0px;
