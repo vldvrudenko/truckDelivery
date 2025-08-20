@@ -52,8 +52,15 @@ document.addEventListener("DOMContentLoaded", () => {
         phoneNumber: Number(document.getElementById("phoneNumber").value),
       };
 
-      if (!data.name || !data.lastName || !data.email || !data.message || !data.phoneNumber) {
-        document.getElementById("status").textContent = "Please fill in all fields correctly";
+      if (
+        !data.name ||
+        !data.lastName ||
+        !data.email ||
+        !data.message ||
+        !data.phoneNumber
+      ) {
+        document.getElementById("status").textContent =
+          "Please fill in all fields correctly";
         return;
       }
 
@@ -67,11 +74,13 @@ document.addEventListener("DOMContentLoaded", () => {
           return response.json();
         })
         .then(() => {
-          document.getElementById("status").textContent = "Data sent successfully!";
+          document.getElementById("status").textContent =
+            "Data sent successfully!";
           form.reset();
         })
         .catch((err) => {
-          document.getElementById("status").textContent = "Error: " + err.message;
+          document.getElementById("status").textContent =
+            "Error: " + err.message;
         });
     });
   }
@@ -99,19 +108,34 @@ document.addEventListener("DOMContentLoaded", () => {
           closeButton.textContent = "Delete Client";
           closeButton.className = "close-btn btn";
 
+          const modal = document.getElementById("confirmModal");
+          const confirmYes = document.getElementById("confirmYes");
+          const confirmNo = document.getElementById("confirmNo");
+          
           closeButton.addEventListener("click", () => {
-            closeButton.disabled = true;
-            fetch(`${url}/${client.id}`, {
-              method: "DELETE"
-            })
-              .then((res) => {
-                if (res.ok || res.status === 404) {
-                  card.remove();
-                } else {
-                  console.error("Error deleting client:");
-                }
+
+            modal.style.display = "flex";
+          
+            confirmNo.onclick = () => {
+              modal.style.display = "none";
+            };
+          
+            confirmYes.onclick = () => {
+              modal.style.display = "none";
+              closeButton.disabled = true;
+          
+              fetch(`${url}/${client.id}`, {
+                method: "DELETE",
               })
-              .catch((err) => console.error("Network error", err));
+                .then((res) => {
+                  if (res.ok || res.status === 404) {
+                    card.remove();
+                  } else {
+                    console.error("Error deleting client:");
+                  }
+                })
+                .catch((err) => console.error("Network error", err));
+            };
           });
 
           card.appendChild(closeButton);
@@ -135,18 +159,56 @@ window.addEventListener("scroll", () => {
 scrollTopBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 });
-document.querySelectorAll('.scroll-link').forEach(link => {
-  link.addEventListener('click', function(e) {
+document.querySelectorAll(".scroll-link").forEach((link) => {
+  link.addEventListener("click", function (e) {
     e.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
+    const targetId = this.getAttribute("href").substring(1);
     const targetElement = document.getElementById(targetId);
-    
+
     window.scrollTo({
-      top: targetElement.offsetTop - 50,
-      behavior: 'smooth'
+      top: targetElement.offsetTop - 20,
+      behavior: "smooth",
     });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const adminBtn = document.getElementById("adminBtn");
+  const loginModal = document.getElementById("loginModal");
+  const loginSubmit = document.getElementById("loginSubmit");
+  const loginCancel = document.getElementById("loginCancel");
+  const loginError = document.getElementById("loginError");
+
+  if (!adminBtn || !loginModal || !loginSubmit || !loginCancel || !loginError) return;
+
+  const ADMIN_USERNAME = "admin";
+  const ADMIN_PASSWORD = "admin";
+
+  adminBtn.addEventListener("click", () => {
+    loginModal.style.display = "flex";
+    loginError.textContent = "";
+    document.getElementById("adminUsername").value = "";
+    document.getElementById("adminPassword").value = "";
+  });
+
+  loginCancel.addEventListener("click", () => {
+    loginModal.style.display = "none";
+  });
+
+  loginSubmit.addEventListener("click", () => {
+    const username = document.getElementById("adminUsername").value.trim();
+    const password = document.getElementById("adminPassword").value.trim();
+
+    if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+      window.location.href = "admin.html"; 
+    } else {
+      loginError.textContent = "Incorrect username or password";
+    }
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === loginModal) loginModal.style.display = "none";
   });
 });

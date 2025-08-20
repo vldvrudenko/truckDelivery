@@ -1,175 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Contact us</title>
-</head>
-<body>
-    <div class="wrapper">
+  </head>
+  <body>
+    <header class="contact-header">
+      <div class="contact-header--position">
+        <h1 class="contact-header__title">Contact Us</h1>
+        <p class="contact-header__description">
+          We’d love to hear from you! Reach out with any questions or comments.
+        </p>
+      </div>
+    </header>
 
-        <header class="contact-header">
-            <div class="contact-header--position">
-                <h1 class="contact-header__title">Contact Us</h1>
-                <p class="contact-header__description">
-                    We’d love to hear from you! Reach out with any questions or comments.
-                </p>
-
-            </div>
-        </header>
-
-        <div class="header__container-content">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html">
-                    <img src="images/logo.png"  loading="lazy" alt="logo" class="logo">
-                        
-                    </a>
-                </div>
-                <ul class="links">
-                    <li><a href="ourCompany.html" class="navbar__links">About Us</a></li>
-                    <li><a href="contactUs.html" class="navbar__links">Contact Us</a></li>
-                    <li class="links__signInSetts">
-                        <a href="admin.html" class="navbar__links navbar__links-signIn-pc"><img
-                                src="images/loginIcon.svg"  loading="lazy" alt="LogIn"></a>
-                        <a href="admin.html" class="navbar__links navbar__links-signIn">Log In</a>
-                    </li>
-                </ul>
-                <div class="toggle">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </div>
-
+    <div class="header__container-content">
+      <div class="navbar">
+        <div class="logo">
+          <a href="/index.html" target="_self" title="Truck">
+            <img
+              src="/images/logo.webp"
+              loading="lazy"
+              alt="logo"
+              class="logo"
+            />
+          </a>
         </div>
-        <section class="contact-section-midle container">
-            <div class="contact-container">
+        <ul class="links">
+          <li>
+            <a
+              href="/aboutUs.html"
+              class="navbar__links"
+              target="_self"
+              title="About Us"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="/contactUs.html"
+              class="navbar__links"
+              target="_self"
+              title="Contact Us"
+              >Contact Us</a
+            >
+          </li>
+          <li class="links__signInSetts">
+            <a id="adminBtn" class="navbar__links" target="_self" title="Admin"
+              ><img src="/images/loginIcon.webp" loading="lazy" alt="LogIn"
+            /></a>
+          </li>
+        </ul>
+        <div class="toggle">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </div>
+    <section class="contact-section-midle container">
+      <div class="contact-container section-distance">
+        <div class="contact-info-left">
+          <h2>Сontact Us</h2>
+          <p>
+            Our support team is ready to answer your questions. We are committed
+            to providing the best service, regardless of your location.
+          </p>
+          <p>Our operators speak:</p>
+          <ul class="language-list">
+            <li>English</li>
+            <li>Hindi</li>
+            <li>Ukrainian</li>
+            <li>French</li>
+          </ul>
+        </div>
 
-                <div class="contact-info-left">
-                    <h2>Сontact Us</h2>
-                    <p>Our support team is ready to answer your questions. We are committed to providing the best
-                        service, regardless of your location.</p>
-                    <p>Our operators speak:</p>
-                    <ul class="language-list">
-                        <li>English</li>
-                        <li>Hindi</li>
-                        <li>Ukrainian</li>
-                        <li>French</li>
-                    </ul>
-                </div>
+        <div class="contact-info-right">
+          <h2>Contact information</h2>
+          <div class="contact-buttons">
+            <a href="tel:+14378397917" class="btn" target="_self" title="Phone">
+              +1 437 839 7917
+            </a>
+            <a
+              href="mailto:vldvvrudenko@gmail.com"
+              target="_self"
+              title="Mail"
+              class="btn"
+            >
+              vldvrudenko@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services slogan_bg" id="contactUs">
+      <div class="slogan container">
+        <div class="slogan__textBlock">
+          <h2>Driven by Trust</h2>
+          <p>
+            For years, we have been delivering goods safely and on time,
+            building long-lasting partnerships with our clients. Our team is
+            committed to providing top-quality freight solutions, tailored to
+            meet every customer’s unique needs.
+          </p>
+          <div>
+            <a href="#contactUs" class="btn">Contact us</a>
+          </div>
+        </div>
+        <div class="slogan__photoBlock">
+          <div class="slogan__img">
+            <img src="/images/slogan_1.webp" loading="lazy" alt="image" />
+          </div>
+          <div class="slogan__img-small">
+            <img src="/images/slogan_2.webp" loading="lazy" alt="image" />
+            <img src="/images/slogan_3.webp" loading="lazy" alt="image" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="contact-info-right">
-                    <h2>Contact information</h2>
-                    <div class="contact-buttons">
-                        <a href="tel:+14378397917" class="btn">
-                            +1 437 839 7917
-                        </a>
-                        <a href="mailto:vldvvrudenko@gmail.com" class="btn">
-                            vldvrudenko@gmail.com
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section class="services slogan_bg" id="contactUs">
-            <div class="slogan container">
-                <div class="slogan__textBlock">
-                    <h2>Driven by Trust</h2>
-                    <p>For years, we have been delivering goods safely and on time, building long-lasting
-                        partnerships with our clients.
-                        Our team is committed to providing top-quality freight solutions, tailored to meet every
-                        customer’s unique needs.</p>
-                    <div>
-                        
-                <a href="#contactUs" class="btn">Contact us</a>
-                    </div>
-                </div>
-                <div class="slogan__photoBlock">
-                    <div class="slogan__img">
-                        <img src="images/slogan_1.jpg"  loading="lazy" alt="image">
-                    </div>
-                    <div class="slogan__img-small">
-                        <img src="images/slogan_2.jpg"  loading="lazy" alt="image">
-                        <img src="images/slogan_3.jpg"  loading="lazy" alt="image">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <main class="main">
-            <section class="contact-section container">
-                <div class="contact-image">
-                    <img src="images/contactUs_img.jpg"  loading="lazy" alt="Contact Us">
-                </div>
-                <form class="contact-form" id="userForm">
-                    <h2>Contact Us</h2>
-                    <div class="form-grid">
-                        <input type="text" id="name" placeholder="Name" required>
-                        <input type="text" id="lastName" placeholder="Last Name" required>
-                        <input type="text" id="email" placeholder="Email" required>
-                        <input type="number" id="phoneNumber" placeholder="Phone number">
-                    </div>
-                    <textarea placeholder="Your message" rows="5" id="message" required></textarea>
-                    <button type="submit" class="btn" id="myButton">Send</button>
-                    <p id="status"></p>
-                </form>
-            </section>
-            <section>
-            <h2 >Location</h2>
-            <script type="text/javascript" charset="utf-8" async
-                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0427563407d584585a0741c86c5d0b6d1753abfd6c4977f5009c5cbe91ae7b27&amp;width=100%&amp;height=457&amp;lang=en_US&amp;scroll=true"></script>
-            </section>
-            <button id="scrollTopBtn" title="Наверх"><img src="images/top.svg"  loading="lazy" alt="top" class="topImg"></button>
-      
-        </main>
-        <footer class="footer">
-            <div class="container footer-position">
-                <div>
-                    <h4>About Project</h4>
-                    <p>This is a training project created to showcase skills in HTML, CSS, and JavaScript, including
-                        responsive layout and working with APIs.</p>
-                    <div class="footer__block-logos">
-                        <a href="https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/"><img
-                                src="images/linkedIn.svg" alt="linkedIn" loading="lazy"></a>
-                        <a href="https://github.com/vldvrudenko"><img src="images/gitHub.svg" alt="gitHub" loading="lazy"></a>
-                        <a href=""><img src="images/resume.svg" alt="resume" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="footer-position-nav">
-                    <div class="footer__block-nav-items">
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/vldvrudenko/truckDelivery" target="_blank">This Project</a>
-                    </div>
-                    <div class="footer__block-nav-items">
-                        <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/" target="_blank">Мy
-                            LinkedIn</a>
-                    </div>
-                    <div class="footer__block-nav-items">
-                        <h3>Tech Stack</h3>
-                        <a href="" target="_blank">My stack</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-position-certification container">
-                TOP TEAM CARRIERS © 2025 | All Rights Reserved.
-            </div>
-        </footer>
+    <main class="main">
+      <section>
+        <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0427563407d584585a0741c86c5d0b6d1753abfd6c4977f5009c5cbe91ae7b27&amp;width=100%&amp;height=457&amp;lang=en_US&amp;scroll=false"
+        ></script>
+      </section>
+      <section class="contact-section container">
+        <div class="contact-image">
+          <img
+            src="/images/contactUs_img.webp"
+            loading="lazy"
+            alt="Contact Us"
+          />
+        </div>
+        <form class="contact-form" id="userForm">
+          <h2>Contact Us</h2>
+          <div class="form-grid">
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="text" id="lastName" placeholder="Last Name" required />
+            <input type="text" id="email" placeholder="Email" required />
+            <input type="number" id="phoneNumber" placeholder="Phone number" />
+          </div>
+          <textarea
+            placeholder="Your message"
+            rows="5"
+            id="message"
+            required
+          ></textarea>
+          <button type="submit" class="btn" id="myButton">Send</button>
+          <p id="status"></p>
+        </form>
+      </section>
+      <button id="scrollTopBtn" title="top">
+        <img src="/images/top.webp" loading="lazy" alt="top" class="topImg" />
+      </button>
+    </main>
+    <footer class="footer">
+      <div class="container footer-position">
+        <div>
+          <h4>About Project</h4>
+          <p>
+            This is a training project created to showcase skills in HTML, CSS,
+            and JavaScript, including responsive layout and working with APIs.
+          </p>
+          <div class="footer__block-logos">
+            <a
+              href="https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/"
+              rel="nofollow"
+              target="_blank"
+              title="LinkedIn"
+              ><img src="/images/linkedIn.webp" alt="linkedIn" loading="lazy"
+            /></a>
+            <a
+              href="https://github.com/vldvrudenko"
+              rel="nofollow"
+              target="_blank"
+              title="Github"
+              ><img src="/images/gitHub.webp" alt="gitHub" loading="lazy"
+            /></a>
+            <a href="" rel="nofollow" target="_blank" title="resume"
+              ><img src="/images/resume.webp" alt="resume" loading="lazy"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-position-nav">
+          <div class="footer__block-nav-items">
+            <h3>GitHub</h3>
+            <a
+              href="https://github.com/vldvrudenko/truckDelivery"
+              target="_blank"
+              rel="nofollow"
+              title="Github"
+              >This Project</a
+            >
+          </div>
+          <div class="footer__block-nav-items">
+            <h3>LinkedIn</h3>
+            <a
+              href="https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/"
+              target="_blank"
+              rel="nofollow"
+              title="LinkedIn"
+              >Мy LinkedIn</a
+            >
+          </div>
+          <div class="footer__block-nav-items">
+            <h3>Tech Stack</h3>
+            <a href="" target="_blank" rel="nofollow" title="Mu stack"
+              >My stack</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-position-certification container">
+        TOP TEAM CARRIERS © 2025 | All Rights Reserved.
+      </div>
+    </footer>
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <h3>Admin Login</h3>
+        <input type="text" id="adminUsername" placeholder="Username - admin" />
+        <input
+          type="password"
+          id="adminPassword"
+          placeholder="Password - admin"
+        />
+        <div id="loginError" class="error-message"></div>
+        <div class="modal-buttons">
+          <button id="loginSubmit" class="btn-admin btn-success">Login</button>
+          <button id="loginCancel" class="btn-admin">Cancel</button>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

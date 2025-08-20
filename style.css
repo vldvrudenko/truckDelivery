@@ -1,6 +1,10 @@
 body {
     background: #f3f4f6;
     min-width: 375px;
+    font-family: "Archivo", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -20,14 +24,12 @@ h3 {
     font-size: 17px;
 }
 
-
-
-  h2 {
+h2 {
     text-align: center;
     font-size: 50px;
-    color: #1e3a8a;
+    color: #285ae1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  }
+}
 p {
     font-family: "Quicksand", sans-serif;
     font-size: 17px;
@@ -71,16 +73,12 @@ a {
     box-shadow: 4px 12px rgba(249, 115, 22, 0.4);
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+
 
 main {
     flex: 1;
 }
-main h2{
+main h2 {
     padding: 20px;
 }
 
@@ -98,46 +96,47 @@ main h2{
 }
 
 .mainPage__bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(images/truckingServices_bg.jpg);box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/truckingServices_bg.webp);
+    box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
 }
 
 .aboutUs__bg {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/aboutUs_bg.jpg);box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/aboutUs_bg.webp);
+    box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
 }
 
 .header__container {
     padding-top: 220px;
     padding-left: 100px;
+    background: rgba(24, 22, 22, 0.5);
+    height: 100vh;
 }
 
-.header__container h2{
+.header__container h2 {
     text-align: start;
+    padding-top: 10px;
 }
 h1 {
     font-size: 70px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     color: #fb923c;
 }
-.header__container h3 {
-    font-size: 25px;
-    padding: 10px 0 10px 0;
-    color: #1e3a8a;
-}
+
 
 .header__container p {
     font-size: 20px;
-    padding: 20px 0;
-    line-height: 1.4;
+    padding: 20px 25px 30px 0px;
+    line-height: 1.6;
+    color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    letter-spacing: 2px;
+    letter-spacing:3px;
     max-width: 750px;
 }
 
 .navbar {
     background-color: rgba(242, 242, 242, 0.9);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    padding: 15px;
+    padding: 0px;
     min-width: 330px;
     height: 65px;
     display: flex;
@@ -182,10 +181,6 @@ h1 {
     display: none;
 }
 
-.navbar__links-signIn-pc {
-    display: block;
-}
-
 .links__signInSetts img {
     width: 30px;
     height: auto;
@@ -198,8 +193,8 @@ h1 {
 }
 
 .logo {
-    width: 250px;
-    height: 120px;
+    width: auto;
+    height: 60px;
 }
 
 .navbar ul.links {
@@ -229,8 +224,9 @@ h1 {
 .toggle {
     display: none;
 }
-
-
+.section-distance{
+    margin: 20px 0 50px 0;
+}
 .card-section {
     display: flex;
     flex-wrap: wrap;
@@ -262,9 +258,11 @@ h1 {
 }
 
 .services {
-    margin-top: 25px;
-    padding: 25px ;
-    background-image: url(images/footer_bg.jpg);
+    padding: 20px 0 50px 0;
+    background-image: url(images/footer_bg.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
 }
 
@@ -288,7 +286,6 @@ h1 {
     gap: 1.5rem;
 }
 
-
 .services__item-textBlock {
     padding: 10px;
 }
@@ -300,7 +297,8 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 45px 0;
-    background-image: url(images/footer_bg.jpg);box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
+    background-image: url(images/footer_bg.webp);
+    box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
 }
 
 .contacts-section h2 {
@@ -329,7 +327,6 @@ h1 {
 .card-infoBlock-item div {
     padding: 10px 10px 0 10px;
 }
-
 
 .card-infoBlock-item img {
     width: 55px;
@@ -458,9 +455,9 @@ h1 {
     background-size: cover;
     background-position: center;
     padding: 200px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-        url(images/contactUs_bg.jpg);
-    text-align: center;box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(images/contactUs_bg.webp);
+    text-align: center;
+    box-shadow: 2px 5px 5px rgba(60, 85, 208, 0.5);
 }
 
 .contact-header__title {
@@ -472,6 +469,7 @@ h1 {
 .contact-header__description {
     color: #fff;
     font-size: 30px;
+    padding-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -579,7 +577,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
 }
-
+.slogan__textBlock p{
+    line-height: 1.6;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
 .slogan__photoBlock {
     display: flex;
     gap: 20px;
@@ -606,12 +609,13 @@ h1 {
 }
 
 .footer {
-    background-image: url(images/footer_bg.jpg);
+    background-image: url(images/footer_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: #fff;
     padding-top: 50px;
+    margin-top: 45px;
 }
 
 .footer-position {
@@ -660,7 +664,9 @@ h1 {
 .footer-position a {
     color: #fb923c;
 }
-
+.admin__main{
+    margin-bottom: 20px;
+}
 .admin__main-user {
     padding: 25px;
     background: #fff;
@@ -710,8 +716,8 @@ h1 {
 
 #scrollTopBtn {
     position: fixed;
-    bottom: 50px;
-    right: 100px;
+    bottom: 70px;
+    right: 50px;
     z-index: 99;
     font-size: 20px;
     border: none;
@@ -719,7 +725,7 @@ h1 {
     background-color: rgba(242, 242, 242, 0.9);
     color: white;
     cursor: pointer;
-    padding: 7px 10px;
+    padding: 5px 7px;
     border-radius: 50%;
     display: none;
     animation:
@@ -736,7 +742,144 @@ h1 {
     height: 50px;
     width: auto;
 }
-
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #1e1e1e;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  }
+  
+  .modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .btn-danger {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c0392b;
+  }
+  
+  .modal .btn {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .modal .btn:hover {
+    background-color: #777;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #1e1e1e;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .modal-content h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #2c2c2c;
+    color: #fff;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  .modal-content input:focus {
+    border-color: #fb923c;
+    outline: none;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .btn-admin {
+    flex: 1;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-admin:hover {
+    transform: translateY(-2px);
+  }
+  
+  .btn-success { background-color: #fb923c;; color: #fff; }
+  .btn-success:hover { background-color: #fb923c; }
+  
+  .btn-admin:not(.btn-success) { background-color: #555; color: #fff; }
+  .btn-admin:not(.btn-success):hover { background-color: #777; }
 @keyframes pulse {
     0%,
     100% {
@@ -747,29 +890,14 @@ h1 {
     }
 }
 
-@media (max-width: 1600px) {
-    .header__container {
-        background: rgba(24, 22, 22, 0.5);
-        height: 100vh;
-    }
-
-    .header__container h3 {
-        color: #fb923c;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    }
-
-    .header__container p {
-        color: white;
-    }
-}
 
 @media (max-width: 1200px) {
-.slogan__textBlock{
-    gap: 0px;
-}
-.slogan p {
-    padding: 20px 0;
-}
+    .slogan__textBlock {
+        gap: 0px;
+    }
+    .slogan p {
+        padding: 20px 0;
+    }
     .footer {
         padding: 50px 50px 0 50px;
     }
@@ -781,8 +909,11 @@ h1 {
     .header__container {
         padding-top: 150px;
         padding-right: 100px;
+        
     }
-
+    .header__container h1{
+        font-size: 50px;
+    }
     .header__bg {
         max-height: 500px;
         padding-bottom: 120px;
@@ -790,7 +921,7 @@ h1 {
 
     .toggle {
         position: absolute;
-        top: 45px;
+        top: 33px;
         right: 20px;
         z-index: 99;
         transform: translateY(-50%);
@@ -808,21 +939,21 @@ h1 {
 
     .toggle > * {
         width: 90%;
-        height: 2px;
-        background: #1e3a8a;
+        height: 3px;
+        background: #fff;
         margin: 3px 0;
     }
 
     .navbar.collapsed .toggle .line1 {
-        transform: rotate(-45deg) translate(-4px, 5px);
+        transform: rotate(45deg) translate(6px, 7px);
     }
-
+    
     .navbar.collapsed .toggle .line2 {
         opacity: 0;
     }
-
+    
     .navbar.collapsed .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(-45deg) translate(5px, -7px);
     }
 
     .navbar.collapsed .logo {
@@ -834,9 +965,7 @@ h1 {
         display: block;
     }
 
-    .navbar__links-signIn-pc {
-        display: none;
-    }
+
 
     .navbar .links {
         position: fixed;
@@ -871,9 +1000,10 @@ h1 {
     }
 }
 @media (max-width: 1040px) {
-.contact-info-right{
-    padding: 0;
-}}
+    .contact-info-right {
+        padding: 0;
+    }
+}
 @media (max-width: 933px) {
     .card-infoBlock-item {
         max-width: 390px;
@@ -898,32 +1028,35 @@ h1 {
     .slogan__img-small {
         display: none;
     }
+    .header__container p{
+        letter-spacing:2px;
+        ;
+    }
 }
 
 @media (max-width: 768px) {
     .slogan {
-        padding:  25px;
+        padding: 25px;
     }
-
-
 
     .header__bg {
         max-height: 500px;
     }
 
     .header__container {
-        padding: 150px 25px 0 25px;
+        padding: 100px 25px 0 25px;
     }
     h1 {
         font-size: 45px;
-      }
-      h2 {
-        font-size: 35px;
-      }
-
-    .header__container h3 {
-        font-size: 30px;
     }
+    .header__container h1{
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+
+
 
     .header__container p {
         font-size: 20px;
@@ -987,8 +1120,6 @@ h1 {
 }
 
 @media (max-width: 500px) {
-
-
     .slogan {
         gap: 0px;
         text-align: center;
@@ -1016,10 +1147,10 @@ h1 {
 @media (max-width: 464px) {
     h1 {
         font-size: 35px;
-      }
-      h2 {
+    }
+    h2 {
         font-size: 30px;
-      }
+    }
     .header__bg {
         padding-bottom: 140px;
     }

@@ -1,90 +1,96 @@
-Project Overview: Truck Delivery
-This is a web project featuring a one-page website for a trucking company, with a separate administration panel for managing requests.
+<u>Truck Delivery Project Overview</u>
 
-Architecture and Structure
-Pages:
+<strong>Project Type:</strong> Web Application — One-page website with admin panel for request management
 
-index.html — The main landing page with company information, services, and testimonials.
+<em>Description:</em>
+Truck Delivery is a fully responsive, modern web project designed for a trucking company. It features a one-page landing site for clients and a dedicated administration panel to manage incoming requests efficiently.
 
-aboutUs.html — The "About Us" page with the company's mission and history.
+<u>Architecture & Structure</u>
+<strong>Pages</strong>
 
-contactUs.html — A dedicated contact page with a form, company contact details, and a map.
+index.html — Main landing page with company overview, services, and client testimonials.
 
-admin.html — The administration panel for viewing, adding, and deleting client requests.
+aboutUs.html — "About Us" page highlighting company history, mission, and values.
 
-CSS:
+contactUs.html — Contact page with a user-friendly form, company information, and integrated map.
 
-reset.css — Resets browser default styles for cross-browser consistency.
+admin.html — Admin panel for viewing, adding, and deleting client requests dynamically.
 
-styles.css — The main project styles, written using the BEM methodology (Block, Element, Modifier) for improved readability and maintainability.
+<strong>CSS</strong>
 
-Google Fonts are used: Archivo (for headings), Quicksand (for body text).
+reset.css — Normalizes default browser styles for consistent rendering across platforms.
 
-JavaScript:
+styles.css — Main stylesheet following <em>BEM methodology</em> (Block, Element, Modifier) for clean, maintainable code.
 
-Implements a mobile-friendly burger menu.
+Typography: Google Fonts — <strong>Archivo</strong> for headings, <strong>Quicksand</strong> for body text.
 
-A "Scroll to Top" button with a smooth scroll function.
+<strong>JavaScript</strong>
 
-Sends contact form data to an external API (MockAPI.io).
+Responsive <em>burger menu</em> for navigation.
 
-Retrieves and displays requests on the admin page.
+<em>Scroll to Top</em> button with smooth scrolling effect.
 
-Initializes the Swiper.js library for the testimonial slider.
+Contact form submission with client-side validation and API integration (<strong>MockAPI.io</strong>).
 
-Technologies and Libraries Used
-HTML5: Semantic page structure for better accessibility and SEO.
+Admin panel fetches, displays, and manages client requests dynamically.
 
-CSS3 (Flexbox/Grid): Responsive design with modern positioning methods and media queries.
+<strong>Swiper.js</strong> integration for responsive testimonial slider.
 
-JavaScript (Vanilla): Handles user interactions, animations, and asynchronous API requests.
+<u>Technologies & Libraries</u>
 
-Swiper.js: A cross-platform library for a responsive testimonial slider.
+<strong>HTML5:</strong> Semantic markup using <code><header></code>, <code><main></code>, <code><section></code>, <code><footer></code> for accessibility and SEO.
 
-MockAPI.io: A mock backend used for storing and retrieving form data via a REST API.
+<strong>CSS3 (Flexbox/Grid):</strong> Modern responsive layout techniques with media queries.
 
-Key Features and Technical Solutions
-Semantic Markup and Accessibility
+<strong>JavaScript (Vanilla):</strong> Handles UI interactivity, animations, and asynchronous API requests.
 
-Structural HTML5 elements (<header>, <main>, <section>, <footer>) are used to organize content logically.
+<strong>Swiper.js:</strong> Responsive slider for testimonials.
 
-Image alternative texts are included for screen reader support.
+<strong>MockAPI.io:</strong> Mock backend for testing CRUD operations on client data.
 
-A clear heading hierarchy (<h1>, <h2>, etc.) is used to properly structure content.
+<u>Key Features & Solutions</u>
+<strong>Semantic Markup & Accessibility</strong>
 
-Responsive Design
+Clear heading hierarchy (<code><h1></code> → <code><h2></code> → <code><h3></code>) ensures content is logically structured.
 
-The layout dynamically adapts to different screen sizes using media queries.
+<em>Alt</em> attributes provided for all images for screen readers.
 
-The navigation menu transforms into a burger menu on smaller screens.
+Semantic HTML elements improve accessibility and SEO.
 
-Lazy loading is implemented for images to optimize page load times.
+<strong>Responsive Design</strong>
 
-JavaScript Interactivity
+Fully adaptive layout for mobile, tablet, and desktop.
 
-The burger menu provides a smooth open/close animation.
+<em>Burger menu</em> replaces full navigation on smaller screens.
 
-The "Scroll to Top" button appears on scroll and ensures a smooth return to the top of the page.
+Lazy loading for images to optimize page load times.
 
-The contact form sends data to MockAPI with client-side validation.
+<strong>Interactivity</strong>
 
-The admin panel dynamically loads and manages data from the API.
+Smooth animations for opening and closing burger menu.
 
-API Integration
+<em>Scroll-to-top</em> button appears dynamically on scroll.
 
-The project is integrated with MockAPI to simulate a real backend.
+Contact form validates input and sends data to <strong>MockAPI</strong>.
 
-Basic CRUD (Create, Read, Update, Delete) operations are implemented for client requests.
+Admin panel performs dynamic CRUD operations using <code>Fetch API</code>.
 
-All requests are handled using the Fetch API.
+<strong>API Integration</strong>
 
-Testimonial Slider
+Integrated with <strong>MockAPI.io</strong> to simulate backend operations.
 
-Swiper.js is used to create a responsive slider with navigation and pagination.
+Full CRUD functionality: <em>Create, Read, Update, Delete</em> client requests.
 
-Testimonials are presented as individual cards with client images, text, and ratings.
+Asynchronous <code>Fetch API</code> ensures responsive interactions.
 
-Contact Information
-LinkedIn: https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/
+<strong>Testimonial Slider</strong>
 
-GitHub: https://github.com/vldvrudenko
+<strong>Swiper.js</strong> displays testimonials in a responsive, swipeable slider.
+
+Each testimonial includes client image, text, and rating card.
+
+<u>Contact & Links</u>
+
+<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/" target="_blank">Volodymyr Rudenko</a>
+
+<strong>GitHub:</strong> <a href="https://github.com/vldvrudenko" target="_blank">vldvrudenko</a>

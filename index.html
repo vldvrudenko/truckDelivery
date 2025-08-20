@@ -1,287 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>Truck</title>
-</head>
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Trucking Services</title>
+  </head>
 
-<body>
-    <div class="wrapper">
-        <header class="header__bg mainPage__bg">
-            <div class="header__container-content">
-                <div class="navbar">
-                    <div class="logo">
-                        <a href="index.html">
-                         <img src="images/logo.png" alt="logo" class="logo" loading="lazy">
-                        
-                        </a>
-                    </div>
-                    <ul class="links">
-                        <li><a href="ourCompany.html" class="navbar__links">About Us</a></li>
-                        <li><a href="contactUs.html" class="navbar__links">Contact Us</a></li>
-                        <li class="links__signInSetts">
-                            <a href="admin.html" class="navbar__links navbar__links-signIn-pc"><img
-                                    src="images/loginIcon.svg" alt="LogIn" loading="lazy"></a>
-                            <a href="admin.html" class="navbar__links navbar__links-signIn">Log In</a>
-                        </li>
-                    </ul>
-                    <div class="toggle">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
-                </div>
-                <div class="header__container">
-                    <h1>Trucking Services</h1>
-                    <h2>We Deliver Your Goods Safe</h2>
-                    <p>Trust us with your freight – our reliable trucking services will
-                        ensure
-                        timely and safe delivery
-                        of
-                        your goods. From local pick-ups to long-distance shipments, our expert team is dedicated to
-                        delivering your goods efficiently and effectively.</p>
-                
-                        <a href="test.html" class="btn">
-                            Get an Online Quote</a>
-                </div>
+  <body>
+    <header class="header__bg mainPage__bg">
+      <div class="header__container-content">
+        <div class="navbar">
+          <div class="logo">
+            <a href="/index.html" target="_self" title="Truck">
+              <img
+                src="/images/logo.webp"
+                loading="lazy"
+                alt="logo"
+                class="logo"
+              />
+            </a>
+          </div>
+          <ul class="links">
+            <li>
+              <a
+                href="/aboutUs.html"
+                class="navbar__links"
+                target="_self"
+                title="About Us"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contactUs.html"
+                class="navbar__links"
+                target="_self"
+                title="Contact Us"
+                >Contact Us</a
+              >
+            </li>
+            <li class="links__signInSetts">
+              <a
+                id="adminBtn"
+                class="navbar__links"
+                target="_self"
+                title="Admin"
+                ><img src="/images/loginIcon.webp" loading="lazy" alt="LogIn"
+              /></a>
+            </li>
+          </ul>
+          <div class="toggle">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+        <div class="header__container">
+          <h1>Trucking Services</h1>
+          <h2>We Deliver Your Goods Safe</h2>
+          <p>
+            Trust us with your freight – our reliable trucking services will
+            ensure timely and safe delivery of your goods. From local pick-ups
+            to long-distance shipments, our expert team is dedicated to
+            delivering your goods efficiently and effectively.
+          </p>
+
+          <a href="#contactUs" class="btn"> Get an Online Quote</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-distance">
+        <h2>What We Offer</h2>
+        <div class="card-section container">
+          <div class="card__item">
+            <img
+              src="/images/safeDeliveryIcon.webp"
+              alt="car image"
+              loading="lazy"
+            />
+            <h3>Your cargo in safe hands</h3>
+            <p class="card__item-text">
+              Careful packaging and full tracking — reliability at every stage.
+            </p>
+          </div>
+          <div class="card__item">
+            <img
+              src="/images/fastDeliveryIcon.webp"
+              alt="car image"
+              loading="lazy"
+            />
+            <h3>Speed you can rely on</h3>
+            <p class="card__item-text">
+              Your cargo arrives as fast as possible — no delays, no excuses.
+            </p>
+          </div>
+          <div class="card__item">
+            <img
+              src="/images/curierDeliveryIcon.webp"
+              alt="car image"
+              loading="lazy"
+            />
+            <h3>Fast and easy</h3>
+            <p class="card__item-text">
+              Personal delivery straight to your door — from our hands to yours.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <h2>Our Services</h2>
+        <div class="container services__block">
+          <div class="services__item">
+            <img
+              src="/images/repairMen_4.webp"
+              alt="repairMen"
+              loading="lazy"
+            />
+            <div class="services__item-textBlock">
+              <h3>Maintenance Support</h3>
+              <p>
+                Regular technical checks keep your deliveries — always on the
+                move.
+              </p>
             </div>
-        </header>
-        <main class="main">
-
-            <h2>What We Offer</h2>
-            <section class="card-section container">
-                <div class="card__item">
-                    <img src="images/safeDeliveryIcon.svg" alt="car image" loading="lazy">
-                    <h3>Your cargo in safe hands</h3>
-                    <p class="card__item-text">Careful packaging and full tracking — reliability at every stage.</p>
-                </div>
-                <div class="card__item">
-                    <img src="images/fastDeliveryIcon.svg" alt="car image" loading="lazy">
-                    <h3>Speed you can rely on</h3>
-                    <p class="card__item-text">Your cargo arrives as fast as possible — no delays, no excuses.</p>
-                </div>
-                <div class="card__item">
-                    <img src="images/curierDeliveryIcon.svg" alt="car image" loading="lazy">
-                    <h3>Fast and easy</h3>
-                    <p class="card__item-text">Personal delivery straight to your door — from our hands to yours.
-                    </p>
-                </div>
-            </section>
-            <section class="services">
-                <h2>Our Services</h2>
-                <div class="container services__block">
-                    <div class="services__item">
-                        <img src="images/repairMen_4.jpg" alt="repairMen" loading="lazy">
-                        <div class= "services__item-textBlock">
-
-                            <h3>Maintenance Support</h3>
-
-                            <p>Regular technical checks keep your deliveries — always on the move.</p>
-                        </div>
-                    </div>
-                    <div class="services__item">
-                        <img src="images/repairMen_2.jpg" alt="repairMen" loading="lazy">
-                        <div class="services__item-textBlock">
-                            <h3>On-Road Inspections</h3>
-                            <p>Pre-trip inspections prevent delays and ensure your cargo arrives on time.</p>
-                        </div>
-                    </div>
-                    <div class="services__item">
-                        <img src="images/repairMen_3.jpg" alt="repairMen" loading="lazy">
-                        <div class="services__item-textBlock">
-                            <h3>Driver Assistance</h3>
-                            <p>Our team is always nearby to help — so drivers stay focused on the road.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="container">
-                <h2 class="card-infoBlock-logo"> Types of Delivery </h2>
-                <div class="card-infoBlock">
-                    <div class="card-infoBlock-item">
-                        <img src="images/heavyIcon.svg" alt="Icon" loading="lazy">
-                        <div>
-                            <h3>Heavy Equipment </h3>
-                            <p class="card__item-text">We handle oversized and industrial cargo with care.</p>
-                        </div>
-                    </div>
-                    <div class=" card-infoBlock-item">
-                        <img src="images/doorIcon.svg" alt="Icon" loading="lazy">
-                        <div>
-                            <h3> Doorstep Packages</h3>
-                            <p class="card__item-text">E-commerce and retail delivery to end customers.</p>
-                        </div>
-                    </div>
-                    <div class=" card-infoBlock-item">
-                        <img src="images/storageIcon.svg" alt="Icon" loading="lazy">
-                        <div>
-                            <h3>Warehouse-to-Warehouse </h3>
-                            <p class="card__item-text">Scheduled logistics between storage and distribution centers.</p>
-                        </div>
-                    </div>
-                    <div class=" card-infoBlock-item">
-                        <img src="images/planeIcon.svg" alt="Icon" loading="lazy">
-                        <div>
-                            <h3 class="card__item-logo">International Cargo </h3>
-                            <p class="card__item-text">Worldwide logistics tailored to your route and needs.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="contacts-section">
-                <h2>
-                    Got cargo? We’re already on the way.
-                </h2>
-                <a href="#contactUs" class="btn">Contact us</a>
-            </section>
-            <section class="swiper mySwiper container " id="contactUs">
-                <h2>Quality You Can Count On</h2>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="images/hero_2.jpg" alt="repairMen" class="rating__hero" loading="lazy">
-                        <div class="services__item-textBlock">
-                            <h3>Sarah M.</h3>
-                            <p class="swiper-slide-text">Fast, professional, and reliable. My shipment arrived exactly
-                                on time — highly
-                                recommended!</p>
-                        </div>
-                        <div class="rating-block">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/hero_1.jpg" alt="repairMen" class="rating__hero">
-                        <div class="services__item-textBlock">
-                            <h3>Daniel K. </h3>
-                            <p class="swiper-slide-text">Great customer service and fair pricing. The team kept me
-                                informed throughout the entire
-                                process.</p>
-                        </div>
-                        <div class="rating-block">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/hero_3.jpg" alt="repairMen" class="rating__hero" loading="lazy">
-                        <div class="services__item-textBlock ">
-                            <h3>Oliver R.</h3>
-                            <p class="swiper-slide-text">They handled my fragile cargo with care and everything arrived
-                                in perfect condition.</p>
-                        </div>
-                        <div class="rating-block">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/hero_1.jpg" alt="repairMen" class="rating__hero" loading="lazy">
-                        <div class="services__item-textBlock">
-                            <h3>Michael T.</h3>
-                            <p class="swiper-slide-text">Efficient and stress-free! Booking was easy, and the delivery
-                                team was very polite.</p>
-                        </div>
-                        <div class="rating-block">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/hero_2.jpg" alt="repairMen" class="rating__hero" loading="lazy">
-                        <div class="services__item-textBlock">
-                            <h3>Emily N.</h3>
-                            <p class="swiper-slide-text">I use them regularly for business shipments — always on time
-                                and very dependable.</p>
-                        </div>
-                        <div class="rating-block">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                            <img src="images/rating.svg" alt="star" class="rating-img" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </section>
-            <section class="contact-section container">
-                <div class="contact-image">
-                    <img src="images/contactUs_img.jpg" alt="Contact Us" loading="lazy">
-                </div>
-                <form class="contact-form" id="userForm">
-                    <h2>Contact Us</h2>
-                    <div class="form-grid">
-                        <input type="text" id="name" placeholder="Name" required>
-                        <input type="text" id="lastName" placeholder="Last Name" required>
-                        <input type="text" id="email" placeholder="Email" required>
-                        <input type="number" id="phoneNumber" placeholder="Phone number">
-                    </div>
-                    <textarea placeholder="Your message" rows="5" id="message" required></textarea>
-                    <button type="submit" class="btn" id="myButton">Send</button>
-                    <p id="status"></p>
-                </form>
-            </section>
-            <button id="scrollTopBtn" title="Top"><img src="images/top.svg" alt="top" class="topImg" loading="lazy"></button>
-        </main>
-        <footer class="footer">
-            <div class="container footer-position">
-                <div>
-                    <h4>About Project</h4>
-                    <p>This is a training project created to showcase skills in HTML, CSS, and JavaScript, including
-                        responsive layout and working with APIs.</p>
-                    <div class="footer__block-logos">
-                        <a href="https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/"><img
-                                src="images/linkedIn.svg" alt="linkedIn" loading="lazy"></a>
-                        <a href="https://github.com/vldvrudenko"><img src="images/gitHub.svg" alt="gitHub" loading="lazy"></a>
-                        <a href=""><img src="images/resume.svg" alt="resume" loading="lazy"></a>
-                    </div>
-                </div>
-                <div class="footer-position-nav">
-                    <div class="footer__block-nav-items">
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/vldvrudenko/truckDelivery" target="_blank">This Project</a>
-                    </div>
-                    <div class="footer__block-nav-items">
-                        <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/" target="_blank">Мy
-                            LinkedIn</a>
-                    </div>
-                    <div class="footer__block-nav-items">
-                        <h3>Tech Stack</h3>
-                        <a href="" target="_blank">My stack</a>
-                    </div>
-                </div>
+          </div>
+          <div class="services__item">
+            <img
+              src="/images/repairMen_2.webp"
+              alt="repairMen"
+              loading="lazy"
+            />
+            <div class="services__item-textBlock">
+              <h3>On-Road Inspections</h3>
+              <p>
+                Pre-trip inspections prevent delays and ensure your cargo
+                arrives on time.
+              </p>
             </div>
-            <div class="footer-position-certification container">
-                TOP TEAM CARRIERS © 2025 | All Rights Reserved.
+          </div>
+          <div class="services__item">
+            <img
+              src="/images/repairMen_3.webp"
+              alt="repairMen"
+              loading="lazy"
+            />
+            <div class="services__item-textBlock">
+              <h3>Driver Assistance</h3>
+              <p>
+                Our team is always nearby to help — so drivers stay focused on
+                the road.
+              </p>
             </div>
-        </footer>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="section-distance">
+          <h2 class="card-infoBlock-logo">Types of Delivery</h2>
+          <div class="card-infoBlock">
+            <div class="card-infoBlock-item">
+              <img src="/images/heavyIcon.webp" alt="Icon" loading="lazy" />
+              <div>
+                <h3>Heavy Equipment</h3>
+                <p class="card__item-text">
+                  We handle oversized and industrial cargo with care.
+                </p>
+              </div>
+            </div>
+            <div class="card-infoBlock-item">
+              <img src="/images/doorIcon.webp" alt="Icon" loading="lazy" />
+              <div>
+                <h3>Doorstep Packages</h3>
+                <p class="card__item-text">
+                  E-commerce and retail delivery to end customers.
+                </p>
+              </div>
+            </div>
+            <div class="card-infoBlock-item">
+              <img src="/images/storageIcon.webp" alt="Icon" loading="lazy" />
+              <div>
+                <h3>Warehouse-to-Warehouse</h3>
+                <p class="card__item-text">
+                  Scheduled logistics between storage and distribution centers.
+                </p>
+              </div>
+            </div>
+            <div class="card-infoBlock-item">
+              <img src="/images/planeIcon.webp" alt="Icon" loading="lazy" />
+              <div>
+                <h3 class="card__item-logo">International Cargo</h3>
+                <p class="card__item-text">
+                  Worldwide logistics tailored to your route and needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts-section">
+        <h2>Got cargo? We’re already on the way.</h2>
+        <a href="#contactUs" class="btn">Contact us</a>
+      </section>
+      <section class="section-distance">
+        <div class="swiper mySwiper container">
+          <h2>Quality You Can Count On</h2>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="/images/hero_2.webp"
+                alt="repairMen"
+                class="rating__hero"
+                loading="lazy"
+              />
+              <div class="services__item-textBlock">
+                <h3>Sarah M.</h3>
+                <p class="swiper-slide-text">
+                  Fast, professional, and reliable. My shipment arrived exactly
+                  on time — highly recommended!
+                </p>
+              </div>
+              <div class="rating-block">
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/images/hero_1.webp"
+                alt="repairMen"
+                class="rating__hero"
+              />
+              <div class="services__item-textBlock">
+                <h3>Daniel K.</h3>
+                <p class="swiper-slide-text">
+                  Great customer service and fair pricing. The team kept me
+                  informed throughout the entire process.
+                </p>
+              </div>
+              <div class="rating-block">
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/images/hero_3.webp"
+                alt="repairMen"
+                class="rating__hero"
+                loading="lazy"
+              />
+              <div class="services__item-textBlock">
+                <h3>Oliver R.</h3>
+                <p class="swiper-slide-text">
+                  They handled my fragile cargo with care and everything arrived
+                  in perfect condition.
+                </p>
+              </div>
+              <div class="rating-block">
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/images/hero_1.webp"
+                alt="repairMen"
+                class="rating__hero"
+                loading="lazy"
+              />
+              <div class="services__item-textBlock">
+                <h3>Michael T.</h3>
+                <p class="swiper-slide-text">
+                  Efficient and stress-free! Booking was easy, and the delivery
+                  team was very polite.
+                </p>
+              </div>
+              <div class="rating-block">
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/images/hero_2.webp"
+                alt="repairMen"
+                class="rating__hero"
+                loading="lazy"
+              />
+              <div class="services__item-textBlock">
+                <h3>Emily N.</h3>
+                <p class="swiper-slide-text">
+                  I use them regularly for business shipments — always on time
+                  and very dependable.
+                </p>
+              </div>
+              <div class="rating-block">
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/rating.webp"
+                  alt="star"
+                  class="rating-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="contact-section container" id="contactUs">
+        <div class="contact-image">
+          <img
+            src="/images/contactUs_img.webp"
+            alt="Contact Us"
+            loading="lazy"
+          />
+        </div>
+        <form class="contact-form" id="userForm">
+          <h2>Contact Us</h2>
+          <div class="form-grid">
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="text" id="lastName" placeholder="Last Name" required />
+            <input type="text" id="email" placeholder="Email" required />
+            <input type="number" id="phoneNumber" placeholder="Phone number" />
+          </div>
+          <textarea
+            placeholder="Your message"
+            rows="5"
+            id="message"
+            required
+          ></textarea>
+          <button type="submit" class="btn" id="myButton">Send</button>
+          <p id="status"></p>
+        </form>
+      </section>
+      <button id="scrollTopBtn" title="Top">
+        <img src="/images/top.webp" alt="top" class="topImg" loading="lazy" />
+      </button>
+    </main>
+    <footer class="footer">
+      <div class="container footer-position">
+        <div>
+          <h4>About Project</h4>
+          <p>
+            This is a training project created to showcase skills in HTML, CSS,
+            and JavaScript, including responsive layout and working with APIs.
+          </p>
+          <div class="footer__block-logos">
+            <a
+              href="https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/"
+              rel="nofollow"
+              target="_blank"
+              title="LinkedIn"
+              ><img src="/images/linkedIn.webp" alt="linkedIn" loading="lazy"
+            /></a>
+            <a
+              href="https://github.com/vldvrudenko"
+              rel="nofollow"
+              target="_blank"
+              title="Github"
+              ><img src="/images/gitHub.webp" alt="gitHub" loading="lazy"
+            /></a>
+            <a href="" rel="nofollow" target="_blank" title="resume"
+              ><img src="/images/resume.webp" alt="resume" loading="lazy"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-position-nav">
+          <div class="footer__block-nav-items">
+            <h3>GitHub</h3>
+            <a
+              href="https://github.com/vldvrudenko/truckDelivery"
+              target="_blank"
+              rel="nofollow"
+              title="Github"
+              >This Project</a
+            >
+          </div>
+          <div class="footer__block-nav-items">
+            <h3>LinkedIn</h3>
+            <a
+              href="https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/"
+              target="_blank"
+              rel="nofollow"
+              title="LinkedIn"
+              >Мy LinkedIn</a
+            >
+          </div>
+          <div class="footer__block-nav-items">
+            <h3>Tech Stack</h3>
+            <a href="" target="_blank" rel="nofollow" title="Mu stack"
+              >My stack</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-position-certification container">
+        TOP TEAM CARRIERS © 2025 | All Rights Reserved.
+      </div>
+    </footer>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <h3>Admin Login</h3>
+        <input type="text" id="adminUsername" placeholder="Username - admin" />
+        <input
+          type="password"
+          id="adminPassword"
+          placeholder="Password - admin"
+        />
+        <div id="loginError" class="error-message"></div>
+        <div class="modal-buttons">
+          <button id="loginSubmit" class="btn-admin btn-success">Login</button>
+          <button id="loginCancel" class="btn-admin">Cancel</button>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
