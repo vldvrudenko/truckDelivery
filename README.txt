@@ -1,96 +1,101 @@
-<u>Truck Delivery Project Overview</u>
+🚛 Truck Delivery — Project Overview
+📦 Project Type
 
-<strong>Project Type:</strong> Web Application — One-page website with admin panel for request management
+Web Application
 
-<em>Description:</em>
-Truck Delivery is a fully responsive, modern web project designed for a trucking company. It features a one-page landing site for clients and a dedicated administration panel to manage incoming requests efficiently.
+📝 Description
 
-<u>Architecture & Structure</u>
-<strong>Pages</strong>
+Truck Delivery is a fully responsive and modern web project for a trucking company.
+It includes a one-page landing site for clients and a dedicated admin panel to efficiently manage incoming requests.
 
-index.html — Main landing page with company overview, services, and client testimonials.
+🏗️ Architecture & Structure
+📄 Pages
 
-aboutUs.html — "About Us" page highlighting company history, mission, and values.
+index.html — Main landing page with company overview, services, and testimonials.
 
-contactUs.html — Contact page with a user-friendly form, company information, and integrated map.
+aboutUs.html — “About Us” page highlighting company history, mission, and values.
+
+contactUs.html — Contact page with a user-friendly form, company info, and embedded map.
 
 admin.html — Admin panel for viewing, adding, and deleting client requests dynamically.
 
-<strong>CSS</strong>
+🎨 CSS
 
-reset.css — Normalizes default browser styles for consistent rendering across platforms.
+reset.css — Normalizes default browser styles for consistent rendering.
 
-styles.css — Main stylesheet following <em>BEM methodology</em> (Block, Element, Modifier) for clean, maintainable code.
+styles.css — Main stylesheet following BEM methodology (Block, Element, Modifier) for clean, maintainable code.
 
-Typography: Google Fonts — <strong>Archivo</strong> for headings, <strong>Quicksand</strong> for body text.
+Typography:
 
-<strong>JavaScript</strong>
+Archivo — for headings
 
-Responsive <em>burger menu</em> for navigation.
+Quicksand — for body text (via Google Fonts)
 
-<em>Scroll to Top</em> button with smooth scrolling effect.
+⚙️ JavaScript
 
-Contact form submission with client-side validation and API integration (<strong>MockAPI.io</strong>).
+Responsive burger menu for navigation.
 
-Admin panel fetches, displays, and manages client requests dynamically.
+Scroll-to-top button with smooth scrolling.
 
-<strong>Swiper.js</strong> integration for responsive testimonial slider.
+Contact form with validation and MockAPI.io integration.
 
-<u>Technologies & Libraries</u>
+Admin panel with dynamic CRUD operations using the Fetch API.
 
-<strong>HTML5:</strong> Semantic markup using <code><header></code>, <code><main></code>, <code><section></code>, <code><footer></code> for accessibility and SEO.
+Swiper.js integration for a responsive testimonial slider.
 
-<strong>CSS3 (Flexbox/Grid):</strong> Modern responsive layout techniques with media queries.
+🧩 Technologies & Libraries
 
-<strong>JavaScript (Vanilla):</strong> Handles UI interactivity, animations, and asynchronous API requests.
+HTML5: Semantic markup (<header>, <main>, <section>, <footer>) for accessibility and SEO.
 
-<strong>Swiper.js:</strong> Responsive slider for testimonials.
+CSS3 (Flexbox & Grid): Responsive layout with media queries.
 
-<strong>MockAPI.io:</strong> Mock backend for testing CRUD operations on client data.
+JavaScript (Vanilla): Handles interactivity, animations, and API requests.
 
-<u>Key Features & Solutions</u>
-<strong>Semantic Markup & Accessibility</strong>
+Swiper.js: For testimonial slider.
 
-Clear heading hierarchy (<code><h1></code> → <code><h2></code> → <code><h3></code>) ensures content is logically structured.
+MockAPI.io: Mock backend for testing CRUD operations.
 
-<em>Alt</em> attributes provided for all images for screen readers.
+🚀 Key Features
+♿ Semantic Markup & Accessibility
 
-Semantic HTML elements improve accessibility and SEO.
+Clear heading hierarchy (<h1> → <h2> → <h3>).
 
-<strong>Responsive Design</strong>
+All images include descriptive alt attributes.
+
+Semantic HTML improves both accessibility and SEO.
+
+📱 Responsive Design
 
 Fully adaptive layout for mobile, tablet, and desktop.
 
-<em>Burger menu</em> replaces full navigation on smaller screens.
+Burger menu replaces navigation on smaller screens.
 
-Lazy loading for images to optimize page load times.
+Lazy loading for images to optimize page load speed.
 
-<strong>Interactivity</strong>
+💫 Interactivity
 
-Smooth animations for opening and closing burger menu.
+Smooth animations for menu transitions.
 
-<em>Scroll-to-top</em> button appears dynamically on scroll.
+Scroll-to-top button appears dynamically.
 
-Contact form validates input and sends data to <strong>MockAPI</strong>.
+Form validation and live submission to MockAPI.io.
 
-Admin panel performs dynamic CRUD operations using <code>Fetch API</code>.
+Admin panel supports Create / Read / Update / Delete operations.
 
-<strong>API Integration</strong>
+🔗 API Integration
 
-Integrated with <strong>MockAPI.io</strong> to simulate backend operations.
+Integrated with MockAPI.io for backend simulation.
 
-Full CRUD functionality: <em>Create, Read, Update, Delete</em> client requests.
+Full CRUD functionality with asynchronous Fetch API requests.
 
-Asynchronous <code>Fetch API</code> ensures responsive interactions.
+⭐ Testimonial Slider
 
-<strong>Testimonial Slider</strong>
+Swiper.js for smooth, touch-friendly testimonial carousel.
 
-<strong>Swiper.js</strong> displays testimonials in a responsive, swipeable slider.
+Each card includes client photo, text, and rating.
 
-Each testimonial includes client image, text, and rating card.
+📬 Contact & Links
 
-<u>Contact & Links</u>
+LinkedIn: Volodymyr Rudenko
 
-<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/volodymyr-rudenko-85a6a1144/" target="_blank">Volodymyr Rudenko</a>
-
-<strong>GitHub:</strong> <a href="https://github.com/vldvrudenko" target="_blank">vldvrudenko</a>
+GitHub: vldvrudenko
